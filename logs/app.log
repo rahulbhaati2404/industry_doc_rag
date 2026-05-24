@@ -1,0 +1,1882 @@
+2026-05-23 22:24:57.962 | INFO     | main:startup_event:25 - Industry Document RAG Engine starting...
+2026-05-23 22:27:48.541 | INFO     | main:shutdown_event:30 - Shutting down Industry Document RAG Engine...
+2026-05-23 22:29:16.447 | INFO     | main:startup_event:32 - Industry Document RAG Engine starting...
+2026-05-23 23:23:54.084 | INFO     | main:shutdown_event:37 - Shutting down Industry Document RAG Engine...
+2026-05-23 23:24:34.131 | INFO     | main:startup_event:32 - Industry Document RAG Engine starting...
+2026-05-24 01:17:20.790 | INFO     | main:shutdown_event:37 - Shutting down Industry Document RAG Engine...
+2026-05-24 01:22:34.108 | INFO     | main:startup_event:32 - Industry Document RAG Engine starting...
+2026-05-24 01:23:31.401 | INFO     | api.ingest:ingest_document:37 - ✓ File saved: data/raw/Leave Policy_WT_V.2.26.pdf
+2026-05-24 01:23:35.500 | ERROR    | api.ingest:ingest_document:73 - PDF ingestion failed: An error occurred while calling o58.count.
+: org.apache.hadoop.mapreduce.lib.input.InvalidInputException: Input path does not exist: file:/D:/Visual_Studio_Code/industry_doc_rag/data/raw/Leave%20Policy_WT_V.2.26.pdf
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:342)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.listStatus(FileInputFormat.java:281)
+	at org.apache.spark.input.StreamFileInputFormat.setMinPartitions(PortableDataStream.scala:51)
+	at org.apache.spark.rdd.BinaryFileRDD.getPartitions(BinaryFileRDD.scala:51)
+	at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:301)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:297)
+	at org.apache.spark.api.python.PythonRDD.getPartitions(PythonRDD.scala:62)
+	at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:301)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:297)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+	at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:301)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:297)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+	at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:301)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:297)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+	at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:301)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:297)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+	at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:301)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:297)
+	at org.apache.spark.sql.execution.SQLExecutionRDD.getPartitions(SQLExecutionRDD.scala:44)
+	at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:301)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:297)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+	at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:301)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:297)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+	at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:301)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:297)
+	at org.apache.spark.api.python.PythonRDD.getPartitions(PythonRDD.scala:62)
+	at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:301)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:297)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+	at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:301)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:297)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+	at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:301)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:297)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+	at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:301)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:297)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+	at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:301)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:297)
+	at org.apache.spark.rdd.RDD.getNumPartitions(RDD.scala:317)
+	at org.apache.spark.sql.execution.exchange.ShuffleExchangeExec.mapOutputStatisticsFuture$lzycompute(ShuffleExchangeExec.scala:214)
+	at org.apache.spark.sql.execution.exchange.ShuffleExchangeExec.mapOutputStatisticsFuture(ShuffleExchangeExec.scala:213)
+	at org.apache.spark.sql.execution.exchange.ShuffleExchangeLike.$anonfun$triggerFuture$3(ShuffleExchangeExec.scala:97)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.exchange.ShuffleExchangeLike.$anonfun$triggerFuture$1(ShuffleExchangeExec.scala:97)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withThreadLocalCaptured$4(SQLExecution.scala:335)
+	at org.apache.spark.sql.execution.SQLExecution$.withSessionTagsApplied(SQLExecution.scala:285)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withThreadLocalCaptured$3(SQLExecution.scala:333)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withThreadLocalCaptured$2(SQLExecution.scala:329)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: Input path does not exist: file:/D:/Visual_Studio_Code/industry_doc_rag/data/raw/Leave%20Policy_WT_V.2.26.pdf
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:315)
+	... 73 more
+
+2026-05-24 01:27:54.516 | INFO     | main:shutdown_event:37 - Shutting down Industry Document RAG Engine...
+2026-05-24 01:28:32.425 | INFO     | main:startup_event:32 - Industry Document RAG Engine starting...
+2026-05-24 01:28:46.150 | INFO     | api.ingest:ingest_document:33 - ✓ File saved: data/raw/Leave Policy_WT_V.2.26.pdf
+2026-05-24 01:29:00.692 | ERROR    | api.ingest:ingest_document:81 - PDF ingestion failed: An error occurred while calling o58.count.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (PF4W6QNM executor driver): org.apache.spark.SparkException: Python worker failed to connect back.
+	at org.apache.spark.api.python.PythonWorkerFactory.createSimpleWorker(PythonWorkerFactory.scala:281)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:154)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:158)
+	at org.apache.spark.api.python.BasePythonRunner.compute(PythonRunner.scala:309)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:72)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.sql.execution.SQLExecutionRDD.compute(SQLExecutionRDD.scala:55)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:72)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:107)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:180)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:873)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:86)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:83)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:97)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:876)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.SocketTimeoutException: Timed out while waiting for the Python worker to connect back
+	at org.apache.spark.api.python.PythonWorkerFactory.createSimpleWorker(PythonWorkerFactory.scala:263)
+	... 57 more
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$3(DAGScheduler.scala:3122)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:3122)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:3114)
+	at scala.collection.immutable.List.foreach(List.scala:323)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:3114)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1303)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1303)
+	at scala.Option.foreach(Option.scala:437)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1303)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3397)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3328)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3317)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:50)
+Caused by: org.apache.spark.SparkException: Python worker failed to connect back.
+	at org.apache.spark.api.python.PythonWorkerFactory.createSimpleWorker(PythonWorkerFactory.scala:281)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:154)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:158)
+	at org.apache.spark.api.python.BasePythonRunner.compute(PythonRunner.scala:309)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:72)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.sql.execution.SQLExecutionRDD.compute(SQLExecutionRDD.scala:55)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:72)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:107)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:180)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:873)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:86)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:83)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:97)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:876)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.SocketTimeoutException: Timed out while waiting for the Python worker to connect back
+	at org.apache.spark.api.python.PythonWorkerFactory.createSimpleWorker(PythonWorkerFactory.scala:263)
+	... 57 more
+
+2026-05-24 01:30:33.943 | INFO     | main:shutdown_event:37 - Shutting down Industry Document RAG Engine...
+2026-05-24 01:34:13.947 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 01:34:59.788 | INFO     | api.ingest:ingest_document:33 - ✓ File saved: data/raw/Leave Policy_WT_V.2.26.pdf
+2026-05-24 01:35:23.648 | ERROR    | api.ingest:ingest_document:81 - PDF ingestion failed: An error occurred while calling o58.count.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (PF4W6QNM executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "D:\Visual_Studio_Code\industry_doc_rag\venv311\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\worker.py", line 3361, in main
+  File "D:\Visual_Studio_Code\industry_doc_rag\venv311\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\worker_util.py", line 64, in read_command
+    command = serializer._read_with_length(file)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Visual_Studio_Code\industry_doc_rag\venv311\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\serializers.py", line 173, in _read_with_length
+    return self.loads(obj)
+           ^^^^^^^^^^^^^^^
+  File "D:\Visual_Studio_Code\industry_doc_rag\venv311\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\serializers.py", line 473, in loads
+    return cloudpickle.loads(obj, encoding=encoding)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Visual_Studio_Code\industry_doc_rag\rag\ingestion.py", line 218, in <module>
+    document_ingestion = DocumentIngestion()
+                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\Visual_Studio_Code\industry_doc_rag\rag\ingestion.py", line 74, in __init__
+    self.spark = spark or self._create_spark_session()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Visual_Studio_Code\industry_doc_rag\rag\ingestion.py", line 138, in _create_spark_session
+    .getOrCreate()
+     ^^^^^^^^^^^^^
+  File "D:\Visual_Studio_Code\industry_doc_rag\venv311\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\sql\session.py", line 557, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Visual_Studio_Code\industry_doc_rag\venv311\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\core\context.py", line 542, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "D:\Visual_Studio_Code\industry_doc_rag\venv311\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\core\context.py", line 197, in __init__
+    SparkContext._assert_on_driver()
+  File "D:\Visual_Studio_Code\industry_doc_rag\venv311\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\core\context.py", line 2641, in _assert_on_driver
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [CONTEXT_ONLY_VALID_ON_DRIVER] It appears that you are attempting to reference SparkContext from a broadcast variable, action, or transformation. SparkContext can only be used on the driver, not in code that it run on workers. For more information, see SPARK-5063.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:645)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1029)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1014)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:596)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:611)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at org.apache.spark.api.python.SerDeUtil$AutoBatchedPickler.hasNext(SerDeUtil.scala:88)
+	at org.apache.spark.api.python.PythonRDD$.writeNextElementToStream(PythonRDD.scala:335)
+	at org.apache.spark.api.python.PythonRunner$$anon$2.writeNextInputToStream(PythonRunner.scala:995)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderInputStream.writeAdditionalInputToPythonWorker(PythonRunner.scala:933)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderInputStream.read(PythonRunner.scala:848)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:381)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1022)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1014)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:596)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:611)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.hashAgg_doAggregateWithoutKey_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:153)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:57)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:111)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:180)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:873)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:86)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:83)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:97)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:876)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$3(DAGScheduler.scala:3122)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:3122)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:3114)
+	at scala.collection.immutable.List.foreach(List.scala:323)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:3114)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1303)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1303)
+	at scala.Option.foreach(Option.scala:437)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1303)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3397)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3328)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3317)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:50)
+Caused by: org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "D:\Visual_Studio_Code\industry_doc_rag\venv311\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\worker.py", line 3361, in main
+  File "D:\Visual_Studio_Code\industry_doc_rag\venv311\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\worker_util.py", line 64, in read_command
+    command = serializer._read_with_length(file)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Visual_Studio_Code\industry_doc_rag\venv311\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\serializers.py", line 173, in _read_with_length
+    return self.loads(obj)
+           ^^^^^^^^^^^^^^^
+  File "D:\Visual_Studio_Code\industry_doc_rag\venv311\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\serializers.py", line 473, in loads
+    return cloudpickle.loads(obj, encoding=encoding)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Visual_Studio_Code\industry_doc_rag\rag\ingestion.py", line 218, in <module>
+    document_ingestion = DocumentIngestion()
+                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\Visual_Studio_Code\industry_doc_rag\rag\ingestion.py", line 74, in __init__
+    self.spark = spark or self._create_spark_session()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Visual_Studio_Code\industry_doc_rag\rag\ingestion.py", line 138, in _create_spark_session
+    .getOrCreate()
+     ^^^^^^^^^^^^^
+  File "D:\Visual_Studio_Code\industry_doc_rag\venv311\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\sql\session.py", line 557, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Visual_Studio_Code\industry_doc_rag\venv311\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\core\context.py", line 542, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "D:\Visual_Studio_Code\industry_doc_rag\venv311\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\core\context.py", line 197, in __init__
+    SparkContext._assert_on_driver()
+  File "D:\Visual_Studio_Code\industry_doc_rag\venv311\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\core\context.py", line 2641, in _assert_on_driver
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [CONTEXT_ONLY_VALID_ON_DRIVER] It appears that you are attempting to reference SparkContext from a broadcast variable, action, or transformation. SparkContext can only be used on the driver, not in code that it run on workers. For more information, see SPARK-5063.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:645)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1029)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1014)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:596)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:611)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at org.apache.spark.api.python.SerDeUtil$AutoBatchedPickler.hasNext(SerDeUtil.scala:88)
+	at org.apache.spark.api.python.PythonRDD$.writeNextElementToStream(PythonRDD.scala:335)
+	at org.apache.spark.api.python.PythonRunner$$anon$2.writeNextInputToStream(PythonRunner.scala:995)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderInputStream.writeAdditionalInputToPythonWorker(PythonRunner.scala:933)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderInputStream.read(PythonRunner.scala:848)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:381)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1022)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1014)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:596)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:611)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.hashAgg_doAggregateWithoutKey_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:153)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:57)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:111)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:180)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:873)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:86)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:83)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:97)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:876)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2026-05-24 01:38:16.308 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 01:40:32.734 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 01:41:27.911 | INFO     | api.ingest:ingest_document:33 - ✓ File saved: data/raw/Wissen Holiday Calendar 2026.pdf
+2026-05-24 01:42:10.532 | INFO     | api.ingest:ingest_document:53 - ✓ Chunking complete: 2 chunks created
+2026-05-24 01:42:32.317 | ERROR    | api.ingest:ingest_document:81 - PDF ingestion failed: An error occurred while calling o75.parquet.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 4.0 failed 1 times, most recent failure: Lost task 0.0 in stage 4.0 (TID 3) (PF4W6QNM executor driver): org.apache.spark.SparkException: Python worker exited unexpectedly (crashed). Consider setting 'spark.sql.execution.pyspark.udf.faulthandler.enabled' or'spark.python.worker.faulthandler.enabled' configuration to 'true' for the better Python traceback.
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator$$anonfun$1.applyOrElse(PythonRunner.scala:678)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator$$anonfun$1.applyOrElse(PythonRunner.scala:663)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:35)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1034)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1014)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:596)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:611)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:110)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:406)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1337)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:418)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec.$anonfun$doExecuteWrite$1(WriteFiles.scala:107)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:180)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:873)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:86)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:83)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:97)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:876)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:46)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:330)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:296)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:259)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:417)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderInputStream.read(PythonRunner.scala:837)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:381)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1022)
+	... 30 more
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$3(DAGScheduler.scala:3122)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:3122)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:3114)
+	at scala.collection.immutable.List.foreach(List.scala:323)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:3114)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1303)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1303)
+	at scala.Option.foreach(Option.scala:437)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1303)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3397)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3328)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3317)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:50)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:1017)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2496)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeWrite$4(FileFormatWriter.scala:309)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.writeAndCommit(FileFormatWriter.scala:270)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeWrite(FileFormatWriter.scala:306)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:189)
+	at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:195)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:117)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:115)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.executeCollect(commands.scala:129)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$eagerlyExecuteCommands$2(QueryExecution.scala:185)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$8(SQLExecution.scala:177)
+	at org.apache.spark.sql.execution.SQLExecution$.withSessionTagsApplied(SQLExecution.scala:285)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$7(SQLExecution.scala:139)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+	at org.apache.spark.sql.artifact.ArtifactManager.$anonfun$withResources$1(ArtifactManager.scala:112)
+	at org.apache.spark.sql.artifact.ArtifactManager.withClassLoaderIfNeeded(ArtifactManager.scala:106)
+	at org.apache.spark.sql.artifact.ArtifactManager.withResources(ArtifactManager.scala:111)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$6(SQLExecution.scala:139)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:308)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$1(SQLExecution.scala:138)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId0(SQLExecution.scala:92)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:250)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$eagerlyExecuteCommands$1(QueryExecution.scala:185)
+	at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:717)
+	at org.apache.spark.sql.execution.QueryExecution.org$apache$spark$sql$execution$QueryExecution$$eagerlyExecute$1(QueryExecution.scala:184)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$3.applyOrElse(QueryExecution.scala:201)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$3.applyOrElse(QueryExecution.scala:194)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:491)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:107)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:491)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:37)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:360)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:356)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:37)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:37)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:467)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:194)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyCommandExecuted$1(QueryExecution.scala:155)
+	at scala.util.Try$.apply(Try.scala:217)
+	at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1392)
+	at org.apache.spark.util.Utils$.getTryWithCallerStacktrace(Utils.scala:1453)
+	at org.apache.spark.util.LazyTry.get(LazyTry.scala:58)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:160)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:239)
+	at org.apache.spark.sql.classic.DataFrameWriter.runCommand(DataFrameWriter.scala:592)
+	at org.apache.spark.sql.classic.DataFrameWriter.save(DataFrameWriter.scala:115)
+	at org.apache.spark.sql.DataFrameWriter.parquet(DataFrameWriter.scala:369)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:108)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	Suppressed: org.apache.spark.util.Utils$OriginalTryStackTraceException: Full stacktrace of original doTryWithCallerStacktrace caller
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$3(DAGScheduler.scala:3122)
+		at scala.Option.getOrElse(Option.scala:201)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:3122)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:3114)
+		at scala.collection.immutable.List.foreach(List.scala:323)
+		at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:3114)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1303)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1303)
+		at scala.Option.foreach(Option.scala:437)
+		at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1303)
+		at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3397)
+		at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3328)
+		at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3317)
+		at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:50)
+		at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:1017)
+		at org.apache.spark.SparkContext.runJob(SparkContext.scala:2496)
+		at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeWrite$4(FileFormatWriter.scala:309)
+		at org.apache.spark.sql.execution.datasources.FileFormatWriter$.writeAndCommit(FileFormatWriter.scala:270)
+		at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeWrite(FileFormatWriter.scala:306)
+		at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:189)
+		at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:195)
+		at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:117)
+		at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:115)
+		at org.apache.spark.sql.execution.command.DataWritingCommandExec.executeCollect(commands.scala:129)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$eagerlyExecuteCommands$2(QueryExecution.scala:185)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$8(SQLExecution.scala:177)
+		at org.apache.spark.sql.execution.SQLExecution$.withSessionTagsApplied(SQLExecution.scala:285)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$7(SQLExecution.scala:139)
+		at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+		at org.apache.spark.sql.artifact.ArtifactManager.$anonfun$withResources$1(ArtifactManager.scala:112)
+		at org.apache.spark.sql.artifact.ArtifactManager.withClassLoaderIfNeeded(ArtifactManager.scala:106)
+		at org.apache.spark.sql.artifact.ArtifactManager.withResources(ArtifactManager.scala:111)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$6(SQLExecution.scala:139)
+		at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:308)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$1(SQLExecution.scala:138)
+		at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+		at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId0(SQLExecution.scala:92)
+		at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:250)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$eagerlyExecuteCommands$1(QueryExecution.scala:185)
+		at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:717)
+		at org.apache.spark.sql.execution.QueryExecution.org$apache$spark$sql$execution$QueryExecution$$eagerlyExecute$1(QueryExecution.scala:184)
+		at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$3.applyOrElse(QueryExecution.scala:201)
+		at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$3.applyOrElse(QueryExecution.scala:194)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:491)
+		at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:107)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:491)
+		at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:37)
+		at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:360)
+		at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:356)
+		at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:37)
+		at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:37)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:467)
+		at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:194)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyCommandExecuted$1(QueryExecution.scala:155)
+		at scala.util.Try$.apply(Try.scala:217)
+		at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1392)
+		at org.apache.spark.util.LazyTry.tryT$lzycompute(LazyTry.scala:46)
+		at org.apache.spark.util.LazyTry.tryT(LazyTry.scala:46)
+		... 18 more
+Caused by: org.apache.spark.SparkException: Python worker exited unexpectedly (crashed). Consider setting 'spark.sql.execution.pyspark.udf.faulthandler.enabled' or'spark.python.worker.faulthandler.enabled' configuration to 'true' for the better Python traceback.
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator$$anonfun$1.applyOrElse(PythonRunner.scala:678)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator$$anonfun$1.applyOrElse(PythonRunner.scala:663)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:35)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1034)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1014)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:596)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:611)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:110)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:406)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1337)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:418)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec.$anonfun$doExecuteWrite$1(WriteFiles.scala:107)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:180)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:873)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:86)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:83)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:97)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:876)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	... 1 more
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:46)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:330)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:296)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:259)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:417)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderInputStream.read(PythonRunner.scala:837)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:381)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1022)
+	... 30 more
+
+2026-05-24 01:45:04.022 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 01:46:17.578 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 01:46:35.493 | INFO     | api.ingest:ingest_document:33 - ✓ File saved: data/raw/Wissen Holiday Calendar 2026.pdf
+2026-05-24 01:47:25.122 | INFO     | api.ingest:ingest_document:53 - ✓ Chunking complete: 2 chunks created
+2026-05-24 01:47:46.689 | ERROR    | api.ingest:ingest_document:81 - PDF ingestion failed: An error occurred while calling o75.parquet.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 4.0 failed 1 times, most recent failure: Lost task 0.0 in stage 4.0 (TID 3) (PF4W6QNM executor driver): org.apache.spark.SparkException: Python worker exited unexpectedly (crashed). Consider setting 'spark.sql.execution.pyspark.udf.faulthandler.enabled' or'spark.python.worker.faulthandler.enabled' configuration to 'true' for the better Python traceback.
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator$$anonfun$1.applyOrElse(PythonRunner.scala:678)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator$$anonfun$1.applyOrElse(PythonRunner.scala:663)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:35)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1034)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1014)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:596)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:611)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:110)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:406)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1337)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:418)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec.$anonfun$doExecuteWrite$1(WriteFiles.scala:107)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:180)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:873)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:86)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:83)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:97)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:876)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:46)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:330)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:296)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:259)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:417)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderInputStream.read(PythonRunner.scala:837)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:381)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1022)
+	... 30 more
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$3(DAGScheduler.scala:3122)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:3122)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:3114)
+	at scala.collection.immutable.List.foreach(List.scala:323)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:3114)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1303)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1303)
+	at scala.Option.foreach(Option.scala:437)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1303)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3397)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3328)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3317)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:50)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:1017)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2496)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeWrite$4(FileFormatWriter.scala:309)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.writeAndCommit(FileFormatWriter.scala:270)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeWrite(FileFormatWriter.scala:306)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:189)
+	at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:195)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:117)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:115)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.executeCollect(commands.scala:129)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$eagerlyExecuteCommands$2(QueryExecution.scala:185)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$8(SQLExecution.scala:177)
+	at org.apache.spark.sql.execution.SQLExecution$.withSessionTagsApplied(SQLExecution.scala:285)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$7(SQLExecution.scala:139)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+	at org.apache.spark.sql.artifact.ArtifactManager.$anonfun$withResources$1(ArtifactManager.scala:112)
+	at org.apache.spark.sql.artifact.ArtifactManager.withClassLoaderIfNeeded(ArtifactManager.scala:106)
+	at org.apache.spark.sql.artifact.ArtifactManager.withResources(ArtifactManager.scala:111)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$6(SQLExecution.scala:139)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:308)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$1(SQLExecution.scala:138)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId0(SQLExecution.scala:92)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:250)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$eagerlyExecuteCommands$1(QueryExecution.scala:185)
+	at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:717)
+	at org.apache.spark.sql.execution.QueryExecution.org$apache$spark$sql$execution$QueryExecution$$eagerlyExecute$1(QueryExecution.scala:184)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$3.applyOrElse(QueryExecution.scala:201)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$3.applyOrElse(QueryExecution.scala:194)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:491)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:107)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:491)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:37)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:360)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:356)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:37)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:37)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:467)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:194)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyCommandExecuted$1(QueryExecution.scala:155)
+	at scala.util.Try$.apply(Try.scala:217)
+	at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1392)
+	at org.apache.spark.util.Utils$.getTryWithCallerStacktrace(Utils.scala:1453)
+	at org.apache.spark.util.LazyTry.get(LazyTry.scala:58)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:160)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:239)
+	at org.apache.spark.sql.classic.DataFrameWriter.runCommand(DataFrameWriter.scala:592)
+	at org.apache.spark.sql.classic.DataFrameWriter.save(DataFrameWriter.scala:115)
+	at org.apache.spark.sql.DataFrameWriter.parquet(DataFrameWriter.scala:369)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:108)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	Suppressed: org.apache.spark.util.Utils$OriginalTryStackTraceException: Full stacktrace of original doTryWithCallerStacktrace caller
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$3(DAGScheduler.scala:3122)
+		at scala.Option.getOrElse(Option.scala:201)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:3122)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:3114)
+		at scala.collection.immutable.List.foreach(List.scala:323)
+		at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:3114)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1303)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1303)
+		at scala.Option.foreach(Option.scala:437)
+		at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1303)
+		at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3397)
+		at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3328)
+		at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3317)
+		at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:50)
+		at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:1017)
+		at org.apache.spark.SparkContext.runJob(SparkContext.scala:2496)
+		at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeWrite$4(FileFormatWriter.scala:309)
+		at org.apache.spark.sql.execution.datasources.FileFormatWriter$.writeAndCommit(FileFormatWriter.scala:270)
+		at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeWrite(FileFormatWriter.scala:306)
+		at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:189)
+		at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:195)
+		at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:117)
+		at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:115)
+		at org.apache.spark.sql.execution.command.DataWritingCommandExec.executeCollect(commands.scala:129)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$eagerlyExecuteCommands$2(QueryExecution.scala:185)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$8(SQLExecution.scala:177)
+		at org.apache.spark.sql.execution.SQLExecution$.withSessionTagsApplied(SQLExecution.scala:285)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$7(SQLExecution.scala:139)
+		at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+		at org.apache.spark.sql.artifact.ArtifactManager.$anonfun$withResources$1(ArtifactManager.scala:112)
+		at org.apache.spark.sql.artifact.ArtifactManager.withClassLoaderIfNeeded(ArtifactManager.scala:106)
+		at org.apache.spark.sql.artifact.ArtifactManager.withResources(ArtifactManager.scala:111)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$6(SQLExecution.scala:139)
+		at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:308)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$1(SQLExecution.scala:138)
+		at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+		at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId0(SQLExecution.scala:92)
+		at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:250)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$eagerlyExecuteCommands$1(QueryExecution.scala:185)
+		at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:717)
+		at org.apache.spark.sql.execution.QueryExecution.org$apache$spark$sql$execution$QueryExecution$$eagerlyExecute$1(QueryExecution.scala:184)
+		at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$3.applyOrElse(QueryExecution.scala:201)
+		at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$3.applyOrElse(QueryExecution.scala:194)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:491)
+		at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:107)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:491)
+		at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:37)
+		at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:360)
+		at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:356)
+		at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:37)
+		at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:37)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:467)
+		at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:194)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyCommandExecuted$1(QueryExecution.scala:155)
+		at scala.util.Try$.apply(Try.scala:217)
+		at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1392)
+		at org.apache.spark.util.LazyTry.tryT$lzycompute(LazyTry.scala:46)
+		at org.apache.spark.util.LazyTry.tryT(LazyTry.scala:46)
+		... 18 more
+Caused by: org.apache.spark.SparkException: Python worker exited unexpectedly (crashed). Consider setting 'spark.sql.execution.pyspark.udf.faulthandler.enabled' or'spark.python.worker.faulthandler.enabled' configuration to 'true' for the better Python traceback.
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator$$anonfun$1.applyOrElse(PythonRunner.scala:678)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator$$anonfun$1.applyOrElse(PythonRunner.scala:663)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:35)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1034)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1014)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:596)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:611)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:110)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:406)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1337)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:418)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec.$anonfun$doExecuteWrite$1(WriteFiles.scala:107)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:180)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:873)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:86)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:83)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:97)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:876)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	... 1 more
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:46)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:330)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:296)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:259)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:417)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderInputStream.read(PythonRunner.scala:837)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:381)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1022)
+	... 30 more
+
+2026-05-24 01:49:43.833 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 01:54:34.368 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 01:54:50.183 | INFO     | api.ingest:ingest_document:33 - ✓ File saved: data/raw/POSH IC Committee_2025-26.pdf
+2026-05-24 01:55:52.931 | INFO     | api.ingest:ingest_document:53 - ✓ Chunking complete: 7 chunks created
+2026-05-24 01:56:15.193 | ERROR    | api.ingest:ingest_document:81 - PDF ingestion failed: An error occurred while calling o76.parquet.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 5.0 failed 1 times, most recent failure: Lost task 0.0 in stage 5.0 (TID 4) (PF4W6QNM executor driver): org.apache.spark.SparkException: Python worker exited unexpectedly (crashed). Consider setting 'spark.sql.execution.pyspark.udf.faulthandler.enabled' or'spark.python.worker.faulthandler.enabled' configuration to 'true' for the better Python traceback.
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator$$anonfun$1.applyOrElse(PythonRunner.scala:678)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator$$anonfun$1.applyOrElse(PythonRunner.scala:663)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:35)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1034)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1014)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:596)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:611)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:110)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:406)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1337)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:418)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec.$anonfun$doExecuteWrite$1(WriteFiles.scala:107)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:180)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:873)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:86)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:83)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:97)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:876)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:46)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:330)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:296)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:259)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:417)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderInputStream.read(PythonRunner.scala:837)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:381)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1022)
+	... 30 more
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$3(DAGScheduler.scala:3122)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:3122)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:3114)
+	at scala.collection.immutable.List.foreach(List.scala:323)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:3114)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1303)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1303)
+	at scala.Option.foreach(Option.scala:437)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1303)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3397)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3328)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3317)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:50)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:1017)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2496)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeWrite$4(FileFormatWriter.scala:309)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.writeAndCommit(FileFormatWriter.scala:270)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeWrite(FileFormatWriter.scala:306)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:189)
+	at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:195)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:117)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:115)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.executeCollect(commands.scala:129)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$eagerlyExecuteCommands$2(QueryExecution.scala:185)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$8(SQLExecution.scala:177)
+	at org.apache.spark.sql.execution.SQLExecution$.withSessionTagsApplied(SQLExecution.scala:285)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$7(SQLExecution.scala:139)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+	at org.apache.spark.sql.artifact.ArtifactManager.$anonfun$withResources$1(ArtifactManager.scala:112)
+	at org.apache.spark.sql.artifact.ArtifactManager.withClassLoaderIfNeeded(ArtifactManager.scala:106)
+	at org.apache.spark.sql.artifact.ArtifactManager.withResources(ArtifactManager.scala:111)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$6(SQLExecution.scala:139)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:308)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$1(SQLExecution.scala:138)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId0(SQLExecution.scala:92)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:250)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$eagerlyExecuteCommands$1(QueryExecution.scala:185)
+	at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:717)
+	at org.apache.spark.sql.execution.QueryExecution.org$apache$spark$sql$execution$QueryExecution$$eagerlyExecute$1(QueryExecution.scala:184)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$3.applyOrElse(QueryExecution.scala:201)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$3.applyOrElse(QueryExecution.scala:194)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:491)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:107)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:491)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:37)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:360)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:356)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:37)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:37)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:467)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:194)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyCommandExecuted$1(QueryExecution.scala:155)
+	at scala.util.Try$.apply(Try.scala:217)
+	at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1392)
+	at org.apache.spark.util.Utils$.getTryWithCallerStacktrace(Utils.scala:1453)
+	at org.apache.spark.util.LazyTry.get(LazyTry.scala:58)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:160)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:239)
+	at org.apache.spark.sql.classic.DataFrameWriter.runCommand(DataFrameWriter.scala:592)
+	at org.apache.spark.sql.classic.DataFrameWriter.save(DataFrameWriter.scala:115)
+	at org.apache.spark.sql.DataFrameWriter.parquet(DataFrameWriter.scala:369)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:108)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	Suppressed: org.apache.spark.util.Utils$OriginalTryStackTraceException: Full stacktrace of original doTryWithCallerStacktrace caller
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$3(DAGScheduler.scala:3122)
+		at scala.Option.getOrElse(Option.scala:201)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:3122)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:3114)
+		at scala.collection.immutable.List.foreach(List.scala:323)
+		at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:3114)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1303)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1303)
+		at scala.Option.foreach(Option.scala:437)
+		at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1303)
+		at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3397)
+		at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3328)
+		at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3317)
+		at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:50)
+		at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:1017)
+		at org.apache.spark.SparkContext.runJob(SparkContext.scala:2496)
+		at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeWrite$4(FileFormatWriter.scala:309)
+		at org.apache.spark.sql.execution.datasources.FileFormatWriter$.writeAndCommit(FileFormatWriter.scala:270)
+		at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeWrite(FileFormatWriter.scala:306)
+		at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:189)
+		at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:195)
+		at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:117)
+		at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:115)
+		at org.apache.spark.sql.execution.command.DataWritingCommandExec.executeCollect(commands.scala:129)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$eagerlyExecuteCommands$2(QueryExecution.scala:185)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$8(SQLExecution.scala:177)
+		at org.apache.spark.sql.execution.SQLExecution$.withSessionTagsApplied(SQLExecution.scala:285)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$7(SQLExecution.scala:139)
+		at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+		at org.apache.spark.sql.artifact.ArtifactManager.$anonfun$withResources$1(ArtifactManager.scala:112)
+		at org.apache.spark.sql.artifact.ArtifactManager.withClassLoaderIfNeeded(ArtifactManager.scala:106)
+		at org.apache.spark.sql.artifact.ArtifactManager.withResources(ArtifactManager.scala:111)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$6(SQLExecution.scala:139)
+		at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:308)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$1(SQLExecution.scala:138)
+		at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+		at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId0(SQLExecution.scala:92)
+		at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:250)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$eagerlyExecuteCommands$1(QueryExecution.scala:185)
+		at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:717)
+		at org.apache.spark.sql.execution.QueryExecution.org$apache$spark$sql$execution$QueryExecution$$eagerlyExecute$1(QueryExecution.scala:184)
+		at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$3.applyOrElse(QueryExecution.scala:201)
+		at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$3.applyOrElse(QueryExecution.scala:194)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:491)
+		at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:107)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:491)
+		at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:37)
+		at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:360)
+		at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:356)
+		at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:37)
+		at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:37)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:467)
+		at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:194)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyCommandExecuted$1(QueryExecution.scala:155)
+		at scala.util.Try$.apply(Try.scala:217)
+		at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1392)
+		at org.apache.spark.util.LazyTry.tryT$lzycompute(LazyTry.scala:46)
+		at org.apache.spark.util.LazyTry.tryT(LazyTry.scala:46)
+		... 18 more
+Caused by: org.apache.spark.SparkException: Python worker exited unexpectedly (crashed). Consider setting 'spark.sql.execution.pyspark.udf.faulthandler.enabled' or'spark.python.worker.faulthandler.enabled' configuration to 'true' for the better Python traceback.
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator$$anonfun$1.applyOrElse(PythonRunner.scala:678)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator$$anonfun$1.applyOrElse(PythonRunner.scala:663)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:35)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1034)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1014)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:596)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:611)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:110)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:406)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1337)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:418)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec.$anonfun$doExecuteWrite$1(WriteFiles.scala:107)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:180)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:873)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:86)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:83)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:97)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:876)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	... 1 more
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:46)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:330)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:296)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:259)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:417)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderInputStream.read(PythonRunner.scala:837)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:381)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1022)
+	... 30 more
+
+2026-05-24 01:58:09.077 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 01:59:29.582 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 01:59:41.285 | INFO     | api.ingest:ingest_document:33 - ✓ File saved: data/raw/POSH IC Committee_2025-26.pdf
+2026-05-24 02:00:24.230 | INFO     | api.ingest:ingest_document:53 - ✓ Chunking complete: 7 chunks created
+2026-05-24 02:00:46.236 | ERROR    | api.ingest:ingest_document:81 - PDF ingestion failed: An error occurred while calling o74.parquet.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 4.0 failed 1 times, most recent failure: Lost task 0.0 in stage 4.0 (TID 3) (PF4W6QNM executor driver): org.apache.spark.SparkException: Python worker exited unexpectedly (crashed). Consider setting 'spark.sql.execution.pyspark.udf.faulthandler.enabled' or'spark.python.worker.faulthandler.enabled' configuration to 'true' for the better Python traceback.
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator$$anonfun$1.applyOrElse(PythonRunner.scala:678)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator$$anonfun$1.applyOrElse(PythonRunner.scala:663)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:35)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1034)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1014)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:596)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:611)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:110)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:406)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1337)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:418)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec.$anonfun$doExecuteWrite$1(WriteFiles.scala:107)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:180)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:873)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:86)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:83)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:97)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:876)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:46)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:330)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:296)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:259)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:417)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderInputStream.read(PythonRunner.scala:837)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:381)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1022)
+	... 30 more
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$3(DAGScheduler.scala:3122)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:3122)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:3114)
+	at scala.collection.immutable.List.foreach(List.scala:323)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:3114)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1303)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1303)
+	at scala.Option.foreach(Option.scala:437)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1303)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3397)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3328)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3317)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:50)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:1017)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2496)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeWrite$4(FileFormatWriter.scala:309)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.writeAndCommit(FileFormatWriter.scala:270)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeWrite(FileFormatWriter.scala:306)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:189)
+	at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:195)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:117)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:115)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.executeCollect(commands.scala:129)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$eagerlyExecuteCommands$2(QueryExecution.scala:185)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$8(SQLExecution.scala:177)
+	at org.apache.spark.sql.execution.SQLExecution$.withSessionTagsApplied(SQLExecution.scala:285)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$7(SQLExecution.scala:139)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+	at org.apache.spark.sql.artifact.ArtifactManager.$anonfun$withResources$1(ArtifactManager.scala:112)
+	at org.apache.spark.sql.artifact.ArtifactManager.withClassLoaderIfNeeded(ArtifactManager.scala:106)
+	at org.apache.spark.sql.artifact.ArtifactManager.withResources(ArtifactManager.scala:111)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$6(SQLExecution.scala:139)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:308)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$1(SQLExecution.scala:138)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId0(SQLExecution.scala:92)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:250)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$eagerlyExecuteCommands$1(QueryExecution.scala:185)
+	at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:717)
+	at org.apache.spark.sql.execution.QueryExecution.org$apache$spark$sql$execution$QueryExecution$$eagerlyExecute$1(QueryExecution.scala:184)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$3.applyOrElse(QueryExecution.scala:201)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$3.applyOrElse(QueryExecution.scala:194)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:491)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:107)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:491)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:37)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:360)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:356)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:37)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:37)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:467)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:194)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyCommandExecuted$1(QueryExecution.scala:155)
+	at scala.util.Try$.apply(Try.scala:217)
+	at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1392)
+	at org.apache.spark.util.Utils$.getTryWithCallerStacktrace(Utils.scala:1453)
+	at org.apache.spark.util.LazyTry.get(LazyTry.scala:58)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:160)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:239)
+	at org.apache.spark.sql.classic.DataFrameWriter.runCommand(DataFrameWriter.scala:592)
+	at org.apache.spark.sql.classic.DataFrameWriter.save(DataFrameWriter.scala:115)
+	at org.apache.spark.sql.DataFrameWriter.parquet(DataFrameWriter.scala:369)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:108)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	Suppressed: org.apache.spark.util.Utils$OriginalTryStackTraceException: Full stacktrace of original doTryWithCallerStacktrace caller
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$3(DAGScheduler.scala:3122)
+		at scala.Option.getOrElse(Option.scala:201)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:3122)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:3114)
+		at scala.collection.immutable.List.foreach(List.scala:323)
+		at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:3114)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1303)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1303)
+		at scala.Option.foreach(Option.scala:437)
+		at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1303)
+		at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3397)
+		at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3328)
+		at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3317)
+		at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:50)
+		at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:1017)
+		at org.apache.spark.SparkContext.runJob(SparkContext.scala:2496)
+		at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeWrite$4(FileFormatWriter.scala:309)
+		at org.apache.spark.sql.execution.datasources.FileFormatWriter$.writeAndCommit(FileFormatWriter.scala:270)
+		at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeWrite(FileFormatWriter.scala:306)
+		at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:189)
+		at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:195)
+		at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:117)
+		at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:115)
+		at org.apache.spark.sql.execution.command.DataWritingCommandExec.executeCollect(commands.scala:129)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$eagerlyExecuteCommands$2(QueryExecution.scala:185)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$8(SQLExecution.scala:177)
+		at org.apache.spark.sql.execution.SQLExecution$.withSessionTagsApplied(SQLExecution.scala:285)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$7(SQLExecution.scala:139)
+		at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+		at org.apache.spark.sql.artifact.ArtifactManager.$anonfun$withResources$1(ArtifactManager.scala:112)
+		at org.apache.spark.sql.artifact.ArtifactManager.withClassLoaderIfNeeded(ArtifactManager.scala:106)
+		at org.apache.spark.sql.artifact.ArtifactManager.withResources(ArtifactManager.scala:111)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$6(SQLExecution.scala:139)
+		at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:308)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$1(SQLExecution.scala:138)
+		at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+		at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId0(SQLExecution.scala:92)
+		at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:250)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$eagerlyExecuteCommands$1(QueryExecution.scala:185)
+		at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:717)
+		at org.apache.spark.sql.execution.QueryExecution.org$apache$spark$sql$execution$QueryExecution$$eagerlyExecute$1(QueryExecution.scala:184)
+		at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$3.applyOrElse(QueryExecution.scala:201)
+		at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$3.applyOrElse(QueryExecution.scala:194)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:491)
+		at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:107)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:491)
+		at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:37)
+		at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:360)
+		at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:356)
+		at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:37)
+		at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:37)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:467)
+		at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:194)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyCommandExecuted$1(QueryExecution.scala:155)
+		at scala.util.Try$.apply(Try.scala:217)
+		at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1392)
+		at org.apache.spark.util.LazyTry.tryT$lzycompute(LazyTry.scala:46)
+		at org.apache.spark.util.LazyTry.tryT(LazyTry.scala:46)
+		... 18 more
+Caused by: org.apache.spark.SparkException: Python worker exited unexpectedly (crashed). Consider setting 'spark.sql.execution.pyspark.udf.faulthandler.enabled' or'spark.python.worker.faulthandler.enabled' configuration to 'true' for the better Python traceback.
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator$$anonfun$1.applyOrElse(PythonRunner.scala:678)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator$$anonfun$1.applyOrElse(PythonRunner.scala:663)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:35)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1034)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1014)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:596)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:611)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:593)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:110)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:406)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1337)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:418)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec.$anonfun$doExecuteWrite$1(WriteFiles.scala:107)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:180)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:873)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:86)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:83)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:97)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:876)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	... 1 more
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:46)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:330)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:296)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:259)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:417)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderInputStream.read(PythonRunner.scala:837)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:381)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:1022)
+	... 30 more
+
+2026-05-24 12:09:51.215 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 12:12:39.520 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 12:13:18.121 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 12:13:42.954 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 12:16:53.936 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 12:17:46.830 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 12:18:53.640 | INFO     | api.ingest:ingest_document:31 - File saved: data/raw/POSH IC Committee_2025-26.pdf
+2026-05-24 12:18:54.123 | INFO     | api.ingest:ingest_document:36 - Chunking complete: 7 chunks created
+2026-05-24 12:19:00.973 | INFO     | api.ingest:ingest_document:40 - Embedding complete: vectors generated
+2026-05-24 12:19:01.158 | INFO     | api.ingest:ingest_document:43 - ChromaDB storage complete: 7 chunks upserted
+2026-05-24 12:45:35.387 | INFO     | api.ingest:ingest_document:31 - File saved: data/raw/KRA&Goals_Performance Management process .pdf
+2026-05-24 12:45:35.709 | INFO     | api.ingest:ingest_document:36 - Chunking complete: 14 chunks created
+2026-05-24 12:45:36.322 | INFO     | api.ingest:ingest_document:40 - Embedding complete: vectors generated
+2026-05-24 12:45:36.375 | INFO     | api.ingest:ingest_document:43 - ChromaDB storage complete: 14 chunks upserted
+2026-05-24 12:45:44.931 | INFO     | api.ingest:ingest_document:31 - File saved: data/raw/Wissen_Group Mediclaim Insurance and GPA Guide 2026-27.pdf
+2026-05-24 12:45:46.681 | INFO     | api.ingest:ingest_document:36 - Chunking complete: 66 chunks created
+2026-05-24 12:45:50.184 | INFO     | api.ingest:ingest_document:40 - Embedding complete: vectors generated
+2026-05-24 12:45:50.313 | INFO     | api.ingest:ingest_document:43 - ChromaDB storage complete: 66 chunks upserted
+2026-05-24 12:46:00.152 | INFO     | api.ingest:ingest_document:31 - File saved: data/raw/Leave Policy_WT_V.2.26.pdf
+2026-05-24 12:46:00.627 | INFO     | api.ingest:ingest_document:36 - Chunking complete: 27 chunks created
+2026-05-24 12:46:01.763 | INFO     | api.ingest:ingest_document:40 - Embedding complete: vectors generated
+2026-05-24 12:46:01.842 | INFO     | api.ingest:ingest_document:43 - ChromaDB storage complete: 27 chunks upserted
+2026-05-24 12:46:14.000 | INFO     | api.ingest:ingest_document:31 - File saved: data/raw/Wissen Holiday Calendar 2026.pdf
+2026-05-24 12:46:14.146 | INFO     | api.ingest:ingest_document:36 - Chunking complete: 2 chunks created
+2026-05-24 12:46:14.308 | INFO     | api.ingest:ingest_document:40 - Embedding complete: vectors generated
+2026-05-24 12:46:14.343 | INFO     | api.ingest:ingest_document:43 - ChromaDB storage complete: 2 chunks upserted
+2026-05-24 12:47:14.839 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 12:47:39.867 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 12:52:10.183 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 12:56:53.143 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 13:24:27.525 | INFO     | api.ingest:ingest_document:34 - File saved: data/raw/Appraisals  Bonus Payout Guigelines_WT_V.3.pdf
+2026-05-24 13:24:27.850 | INFO     | observability.metrics:record:22 - [METRIC] ingestion_pages_processed=3
+2026-05-24 13:24:27.851 | INFO     | observability.metrics:record:22 - [METRIC] ingestion_chunks_created=15
+2026-05-24 13:24:27.851 | INFO     | observability.metrics:record:22 - [METRIC] ingestion_processing_time_ms=324.32180002797395
+2026-05-24 13:24:28.011 | INFO     | observability.metrics:record:22 - [METRIC] ingestion_save_time_ms=160.06010002456605
+2026-05-24 13:24:28.012 | INFO     | observability.metrics:record:22 - [METRIC] ingestion_chunks_saved=15
+2026-05-24 13:24:28.012 | INFO     | api.ingest:ingest_document:39 - Chunking complete: 15 chunks created
+2026-05-24 13:24:39.118 | INFO     | observability.metrics:record:22 - [METRIC] embedding_chunks_processed=15
+2026-05-24 13:24:39.119 | INFO     | observability.metrics:record:22 - [METRIC] embedding_processing_time_ms=11105.22150003817
+2026-05-24 13:24:39.120 | INFO     | observability.metrics:record:22 - [METRIC] embedding_model_used=BAAI/bge-small-en-v1.5
+2026-05-24 13:24:39.143 | INFO     | api.ingest:ingest_document:43 - Embedding complete: vectors generated
+2026-05-24 13:24:39.405 | INFO     | observability.metrics:record:22 - [METRIC] vector_store_chunks_upserted=15
+2026-05-24 13:24:39.406 | INFO     | observability.metrics:record:22 - [METRIC] vector_store_upsert_time_ms=261.8957000086084
+2026-05-24 13:24:39.407 | INFO     | observability.metrics:record:22 - [METRIC] vector_store_collection=industry_documents
+2026-05-24 13:24:39.407 | INFO     | api.ingest:ingest_document:46 - ChromaDB storage complete: 15 chunks upserted
+2026-05-24 13:24:39.408 | INFO     | observability.metrics:record:22 - [METRIC] api_ingest_total_time_ms=11887.224100064486
+2026-05-24 13:24:39.408 | INFO     | observability.metrics:record:22 - [METRIC] api_ingest_success=1
+2026-05-24 13:26:18.194 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 13:26:50.911 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 13:27:06.429 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 13:31:59.713 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 13:32:11.891 | INFO     | api.ingest:ingest_document:34 - File saved: data/raw/KRA&Goals_Performance Management process .pdf
+2026-05-24 13:32:12.144 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_pages_processed=9
+2026-05-24 13:32:12.145 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_created=14
+2026-05-24 13:32:12.145 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_processing_time_ms=252.26480001583695
+2026-05-24 13:32:12.207 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_save_time_ms=60.482700006105006
+2026-05-24 13:32:12.208 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_saved=14
+2026-05-24 13:32:12.208 | INFO     | api.ingest:ingest_document:39 - Chunking complete: 14 chunks created
+2026-05-24 13:32:21.133 | INFO     | observability.metrics:record:11 - [METRIC] embedding_chunks_processed=14
+2026-05-24 13:32:21.135 | INFO     | observability.metrics:record:11 - [METRIC] embedding_processing_time_ms=8925.760899903253
+2026-05-24 13:32:21.135 | INFO     | observability.metrics:record:11 - [METRIC] embedding_model_used=BAAI/bge-small-en-v1.5
+2026-05-24 13:32:21.157 | INFO     | api.ingest:ingest_document:43 - Embedding complete: vectors generated
+2026-05-24 13:32:21.338 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_chunks_upserted=14
+2026-05-24 13:32:21.338 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_upsert_time_ms=181.85409996658564
+2026-05-24 13:32:21.338 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_collection=industry_documents
+2026-05-24 13:32:21.338 | INFO     | api.ingest:ingest_document:46 - ChromaDB storage complete: 14 chunks upserted
+2026-05-24 13:32:21.338 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_total_time_ms=9455.86500002537
+2026-05-24 13:32:21.338 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_success=1
+2026-05-24 13:40:59.723 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 13:41:27.556 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 13:48:03.008 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 13:48:07.832 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 13:48:18.985 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 13:48:38.339 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 13:50:11.470 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 13:50:16.354 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 13:50:28.086 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 13:50:49.638 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 13:51:08.864 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 14:01:28.824 | INFO     | rag.pipeline:arun:72 - Starting async RAG pipeline for query: Hi, i am rahul, pls tell me Holiday list of 2026 for wissen?
+2026-05-24 14:01:28.824 | INFO     | guardrails.input_guard:validate_input:34 - Running input guardrails
+2026-05-24 14:06:41.176 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 14:06:46.435 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:07:17.020 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:07:38.867 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:07:57.075 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 14:08:41.407 | INFO     | rag.pipeline:arun:72 - Starting async RAG pipeline for query: Hi, i am rahul, pls tell me Holiday list of 2026 for wissen?
+2026-05-24 14:08:41.408 | INFO     | guardrails.input_guard:validate_input:34 - Running input guardrails
+2026-05-24 14:11:24.267 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 14:11:29.390 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:11:49.421 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 14:11:49.421 | INFO     | rag.pipeline:arun:72 - Starting async RAG pipeline for query: Hi, i am rahul, pls tell me Holiday list of 2026 for wissen?
+2026-05-24 14:11:49.428 | INFO     | guardrails.input_guard:validate_input:34 - Running input guardrails
+2026-05-24 14:13:28.034 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 14:13:32.901 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:13:51.727 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 14:16:10.982 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 14:16:15.979 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:16:36.108 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 14:21:33.571 | INFO     | rag.pipeline:arun:72 - Starting async RAG pipeline for query: Hi, i am rahul, pls tell me Holiday list of 2026 for wissen?
+2026-05-24 14:21:33.576 | INFO     | guardrails.input_guard:validate_input:34 - Running input guardrails
+2026-05-24 14:21:33.599 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-05-24 14:21:33.601 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.00700005330145359
+2026-05-24 14:21:33.601 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 14:21:43.105 | INFO     | models.model_registry:register:11 - Registering model: BAAI/bge-small-en-v1.5
+2026-05-24 14:21:43.243 | INFO     | rag.reranker:__init__:13 - Loading reranker model: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-05-24 14:21:53.584 | INFO     | rag.reranker:__init__:21 - Reranker model loaded successfully
+2026-05-24 14:21:53.586 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-05-24 14:21:53.589 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: Hi, i am rahul, pls tell me Holiday list of 2026 for wissen?
+2026-05-24 14:21:53.589 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.0171000137925148
+2026-05-24 14:21:53.590 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 14:21:53.590 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-05-24 14:21:53.856 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 265.37 ms
+2026-05-24 14:21:53.857 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-05-24 14:21:53.857 | INFO     | rag.reranker:rerank:37 - Reranking 5 documents
+2026-05-24 14:21:54.119 | INFO     | rag.reranker:rerank:66 - Returning top 3 reranked documents
+2026-05-24 14:21:54.120 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=2.5087 | Source=None
+2026-05-24 14:21:54.121 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=-1.3677 | Source=None
+2026-05-24 14:21:54.121 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=-5.4034 | Source=None
+2026-05-24 14:21:54.121 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-05-24 14:21:54.122 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-05-24 14:21:54.122 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=2.508678436279297
+2026-05-24 14:21:54.124 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 538.16 ms
+2026-05-24 14:21:54.125 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-05-24 14:21:54.125 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 0.00 ms
+2026-05-24 14:21:54.126 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-05-24 14:21:54.126 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 0.00 ms
+2026-05-24 14:21:54.127 | INFO     | rag.pipeline:_prepare:52 - Selected model: llama3.2:1b
+2026-05-24 14:21:54.127 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.029999995604157448
+2026-05-24 14:21:54.128 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 14:21:54.128 | INFO     | observability.tracing:trace:17 - [TRACE START] generation
+2026-05-24 14:21:54.129 | INFO     | models.ollama_client:agenerate:69 - Async generation using llama3.2:1b
+2026-05-24 14:22:09.313 | INFO     | observability.tracing:trace:31 - [TRACE END] generation | 15184.60 ms
+2026-05-24 14:22:09.314 | INFO     | rag.pipeline:arun:91 - Pipeline completed in 35742.97 ms
+2026-05-24 14:22:09.449 | INFO     | hallucination.detector:__init__:12 - Loading hallucination model: MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli
+2026-05-24 14:22:12.632 | INFO     | hallucination.detector:__init__:22 - Hallucination detector loaded
+2026-05-24 14:22:12.642 | INFO     | observability.tracing:trace:17 - [TRACE START] hallucination_detection
+2026-05-24 14:22:22.058 | INFO     | hallucination.detector:evaluate:51 - NLI label=neutral score=0.7339
+2026-05-24 14:22:22.059 | INFO     | observability.tracing:trace:31 - [TRACE END] hallucination_detection | 9416.98 ms
+2026-05-24 14:22:22.059 | INFO     | guardrails.output_guard:validate_output:20 - Running output guardrails
+2026-05-24 14:22:22.060 | INFO     | observability.metrics:record:11 - [METRIC] prompt_tokens=288
+2026-05-24 14:22:22.061 | INFO     | observability.metrics:record:11 - [METRIC] completion_tokens=46
+2026-05-24 14:22:22.061 | INFO     | observability.metrics:record:11 - [METRIC] latency_ms=35742.96545982361
+2026-05-24 14:22:22.062 | INFO     | observability.metrics:record:11 - [METRIC] hallucination_score=0.7338758707046509
+2026-05-24 14:22:22.062 | INFO     | observability.metrics:record:11 - [METRIC] hallucination_detected=0
+2026-05-24 14:22:22.062 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-05-24 14:22:22.063 | INFO     | observability.metrics:record:11 - [METRIC] response_cache_hit=0
+2026-05-24 14:22:22.063 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=2.508678436279297
+2026-05-24 14:22:22.064 | INFO     | memory.session_memory:add_message:68 - Message added to session: 1
+2026-05-24 14:22:22.064 | INFO     | memory.session_memory:add_message:68 - Message added to session: 1
+2026-05-24 14:22:22.065 | INFO     | memory.summarizer:summarize:28 - Generating conversation summary
+2026-05-24 14:22:22.065 | INFO     | models.model_registry:register:11 - Registering model: llama3.2:1b
+2026-05-24 14:22:22.066 | INFO     | models.ollama_client:generate:33 - Generating response using model: llama3.2:1b
+2026-05-24 14:22:28.687 | INFO     | memory.semantic_memory:remember:31 - Storing semantic memory
+2026-05-24 14:22:28.817 | INFO     | observability.metrics:record:11 - [METRIC] cache_invalidations=1
+2026-05-24 14:31:25.033 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 14:31:30.257 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:31:43.583 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:32:06.423 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 14:32:06.746 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 14:32:11.322 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:32:28.587 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:32:48.000 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 14:34:12.434 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 14:34:17.151 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:34:37.702 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 14:35:39.599 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 14:35:45.171 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:35:49.268 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:36:08.076 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 14:37:53.788 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 14:38:00.066 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:38:09.288 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:38:24.531 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:38:45.876 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:39:03.974 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 14:39:50.578 | INFO     | rag.pipeline:arun:72 - Starting async RAG pipeline for query: Hi, i am rahul, pls tell me Holiday list of 2026 for wissen?
+2026-05-24 14:39:50.580 | INFO     | guardrails.input_guard:validate_input:34 - Running input guardrails
+2026-05-24 14:39:50.583 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-05-24 14:39:50.584 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.006900052540004253
+2026-05-24 14:39:50.584 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 14:40:00.113 | INFO     | rag.reranker:__init__:13 - Loading reranker model: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-05-24 14:40:09.254 | INFO     | rag.reranker:__init__:21 - Reranker model loaded successfully
+2026-05-24 14:40:09.257 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-05-24 14:40:09.260 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: Hi, i am rahul, pls tell me Holiday list of 2026 for wissen?
+2026-05-24 14:40:09.260 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.006200047209858894
+2026-05-24 14:40:09.263 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 14:40:09.263 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-05-24 14:40:09.512 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 248.86 ms
+2026-05-24 14:40:09.513 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-05-24 14:40:09.513 | INFO     | rag.reranker:rerank:37 - Reranking 5 documents
+2026-05-24 14:40:09.689 | INFO     | rag.reranker:rerank:66 - Returning top 3 reranked documents
+2026-05-24 14:40:09.689 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=2.5087 | Source=None
+2026-05-24 14:40:09.690 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=-1.3677 | Source=None
+2026-05-24 14:40:09.690 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=-5.4034 | Source=None
+2026-05-24 14:40:09.691 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-05-24 14:40:09.691 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-05-24 14:40:09.692 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=2.508678436279297
+2026-05-24 14:40:09.693 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 435.57 ms
+2026-05-24 14:40:09.693 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-05-24 14:40:09.694 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 1.00 ms
+2026-05-24 14:40:09.694 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-05-24 14:40:09.695 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 1.00 ms
+2026-05-24 14:40:09.695 | INFO     | rag.pipeline:_prepare:52 - Selected model: mistral
+2026-05-24 14:40:09.696 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.03179989289492369
+2026-05-24 14:40:09.696 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 14:40:09.697 | INFO     | observability.tracing:trace:17 - [TRACE START] generation
+2026-05-24 14:40:09.697 | INFO     | models.ollama_client:agenerate:69 - Async generation using mistral
+2026-05-24 14:42:17.293 | INFO     | observability.tracing:trace:31 - [TRACE END] generation | 127595.25 ms
+2026-05-24 14:42:17.295 | INFO     | rag.pipeline:arun:91 - Pipeline completed in 146717.65 ms
+2026-05-24 14:42:17.503 | INFO     | hallucination.detector:__init__:12 - Loading hallucination model: MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli
+2026-05-24 14:42:21.262 | INFO     | hallucination.detector:__init__:22 - Hallucination detector loaded
+2026-05-24 14:42:21.265 | INFO     | observability.tracing:trace:17 - [TRACE START] hallucination_detection
+2026-05-24 14:42:35.633 | INFO     | hallucination.detector:evaluate:51 - NLI label=neutral score=0.7241
+2026-05-24 14:42:35.635 | INFO     | observability.tracing:trace:31 - [TRACE END] hallucination_detection | 14370.41 ms
+2026-05-24 14:42:35.635 | INFO     | guardrails.output_guard:validate_output:20 - Running output guardrails
+2026-05-24 14:42:35.637 | INFO     | observability.metrics:record:11 - [METRIC] prompt_tokens=338
+2026-05-24 14:42:35.637 | INFO     | observability.metrics:record:11 - [METRIC] completion_tokens=100
+2026-05-24 14:42:35.637 | INFO     | observability.metrics:record:11 - [METRIC] latency_ms=146717.64826774597
+2026-05-24 14:42:35.637 | INFO     | observability.metrics:record:11 - [METRIC] hallucination_score=0.7241304516792297
+2026-05-24 14:42:35.637 | INFO     | observability.metrics:record:11 - [METRIC] hallucination_detected=0
+2026-05-24 14:42:35.639 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-05-24 14:42:35.639 | INFO     | observability.metrics:record:11 - [METRIC] response_cache_hit=0
+2026-05-24 14:42:35.639 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=2.508678436279297
+2026-05-24 14:42:35.640 | INFO     | memory.session_memory:add_message:68 - Message added to session: 1
+2026-05-24 14:42:35.640 | INFO     | memory.session_memory:add_message:68 - Message added to session: 1
+2026-05-24 14:42:35.640 | INFO     | memory.summarizer:summarize:28 - Generating conversation summary
+2026-05-24 14:42:35.640 | INFO     | models.model_registry:register:11 - Registering model: llama3.2:1b
+2026-05-24 14:42:35.642 | INFO     | models.ollama_client:generate:33 - Generating response using model: llama3.2:1b
+2026-05-24 14:42:49.936 | INFO     | memory.semantic_memory:remember:31 - Storing semantic memory
+2026-05-24 14:42:50.442 | INFO     | observability.metrics:record:11 - [METRIC] cache_invalidations=1
+2026-05-24 14:42:50.447 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 14:42:56.815 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:43:20.601 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:43:44.321 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:44:02.562 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 14:47:13.055 | INFO     | rag.pipeline:arun:72 - Starting async RAG pipeline for query: Hi, i am rahul, pls tell me Holiday list of 2026 for wissen?
+2026-05-24 14:47:13.055 | INFO     | guardrails.input_guard:validate_input:34 - Running input guardrails
+2026-05-24 14:47:13.059 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-05-24 14:47:13.063 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.00900006853044033
+2026-05-24 14:47:13.064 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 14:47:20.049 | INFO     | rag.reranker:__init__:13 - Loading reranker model: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-05-24 14:47:27.767 | INFO     | rag.reranker:__init__:21 - Reranker model loaded successfully
+2026-05-24 14:47:27.779 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-05-24 14:47:27.780 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: Hi, i am rahul, pls tell me Holiday list of 2026 for wissen?
+2026-05-24 14:47:27.782 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.0068999361246824265
+2026-05-24 14:47:27.783 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 14:47:27.785 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-05-24 14:47:28.005 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 220.33 ms
+2026-05-24 14:47:28.005 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-05-24 14:47:28.005 | INFO     | rag.reranker:rerank:37 - Reranking 5 documents
+2026-05-24 14:47:28.285 | INFO     | rag.reranker:rerank:66 - Returning top 3 reranked documents
+2026-05-24 14:47:28.285 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=2.5087 | Source=None
+2026-05-24 14:47:28.287 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=-1.3677 | Source=None
+2026-05-24 14:47:28.287 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=-5.4034 | Source=None
+2026-05-24 14:47:28.287 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-05-24 14:47:28.287 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-05-24 14:47:28.287 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=2.508678436279297
+2026-05-24 14:47:28.289 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 510.75 ms
+2026-05-24 14:47:28.289 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-05-24 14:47:28.289 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 0.00 ms
+2026-05-24 14:47:28.291 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-05-24 14:47:28.291 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 0.00 ms
+2026-05-24 14:47:28.291 | INFO     | rag.pipeline:_prepare:52 - Selected model: mistral
+2026-05-24 14:47:28.291 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.03060000017285347
+2026-05-24 14:47:28.291 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 14:47:28.294 | INFO     | observability.tracing:trace:17 - [TRACE START] generation
+2026-05-24 14:47:28.294 | INFO     | models.ollama_client:agenerate:69 - Async generation using mistral
+2026-05-24 14:49:29.016 | INFO     | observability.tracing:trace:31 - [TRACE END] generation | 120721.54 ms
+2026-05-24 14:49:29.017 | INFO     | rag.pipeline:arun:91 - Pipeline completed in 135962.98 ms
+2026-05-24 14:49:29.167 | INFO     | hallucination.detector:__init__:12 - Loading hallucination model: MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli
+2026-05-24 14:49:32.330 | INFO     | hallucination.detector:__init__:22 - Hallucination detector loaded
+2026-05-24 14:49:32.334 | INFO     | observability.tracing:trace:17 - [TRACE START] hallucination_detection
+2026-05-24 14:49:46.857 | INFO     | hallucination.detector:evaluate:51 - NLI label=entailment score=0.7233
+2026-05-24 14:49:46.857 | INFO     | observability.tracing:trace:31 - [TRACE END] hallucination_detection | 14523.28 ms
+2026-05-24 14:49:46.857 | INFO     | guardrails.output_guard:validate_output:20 - Running output guardrails
+2026-05-24 14:49:46.857 | INFO     | observability.metrics:record:11 - [METRIC] prompt_tokens=392
+2026-05-24 14:49:46.857 | INFO     | observability.metrics:record:11 - [METRIC] completion_tokens=84
+2026-05-24 14:49:46.857 | INFO     | observability.metrics:record:11 - [METRIC] latency_ms=135962.98170089722
+2026-05-24 14:49:46.857 | INFO     | observability.metrics:record:11 - [METRIC] hallucination_score=0.7232590317726135
+2026-05-24 14:49:46.869 | INFO     | observability.metrics:record:11 - [METRIC] hallucination_detected=0
+2026-05-24 14:49:46.869 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-05-24 14:49:46.869 | INFO     | observability.metrics:record:11 - [METRIC] response_cache_hit=0
+2026-05-24 14:49:46.869 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=2.508678436279297
+2026-05-24 14:49:46.869 | INFO     | memory.session_memory:add_message:68 - Message added to session: 1
+2026-05-24 14:49:46.869 | INFO     | memory.session_memory:add_message:68 - Message added to session: 1
+2026-05-24 14:49:46.871 | INFO     | memory.summarizer:summarize:28 - Generating conversation summary
+2026-05-24 14:49:46.871 | INFO     | models.model_registry:register:11 - Registering model: llama3.2:1b
+2026-05-24 14:49:46.871 | INFO     | models.ollama_client:generate:33 - Generating response using model: llama3.2:1b
+2026-05-24 14:50:01.172 | INFO     | memory.semantic_memory:remember:31 - Storing semantic memory
+2026-05-24 14:50:01.310 | INFO     | observability.metrics:record:11 - [METRIC] cache_invalidations=1
+2026-05-24 14:50:21.507 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 14:50:27.160 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 14:50:50.454 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 14:51:00.953 | INFO     | rag.pipeline:arun:72 - Starting async RAG pipeline for query: Hi, i am rahul, pls tell me Holiday list of 2026 for wissen?
+2026-05-24 14:51:00.954 | INFO     | guardrails.input_guard:validate_input:34 - Running input guardrails
+2026-05-24 14:51:00.956 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-05-24 14:51:00.957 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.008699949830770493
+2026-05-24 14:51:00.960 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 14:51:07.681 | INFO     | rag.reranker:__init__:13 - Loading reranker model: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-05-24 14:51:15.372 | INFO     | rag.reranker:__init__:21 - Reranker model loaded successfully
+2026-05-24 14:51:15.376 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-05-24 14:51:15.376 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: Hi, i am rahul, pls tell me Holiday list of 2026 for wissen?
+2026-05-24 14:51:15.376 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.00600004568696022
+2026-05-24 14:51:15.376 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 14:51:15.376 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-05-24 14:51:15.569 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 192.48 ms
+2026-05-24 14:51:15.569 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-05-24 14:51:15.569 | INFO     | rag.reranker:rerank:37 - Reranking 5 documents
+2026-05-24 14:51:15.742 | INFO     | rag.reranker:rerank:66 - Returning top 3 reranked documents
+2026-05-24 14:51:15.742 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=2.5087 | Source=None
+2026-05-24 14:51:15.742 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=-1.3677 | Source=None
+2026-05-24 14:51:15.747 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=-5.4034 | Source=None
+2026-05-24 14:51:15.747 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-05-24 14:51:15.747 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-05-24 14:51:15.747 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=2.508678436279297
+2026-05-24 14:51:15.747 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 371.17 ms
+2026-05-24 14:51:15.747 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-05-24 14:51:15.747 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 0.00 ms
+2026-05-24 14:51:15.747 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-05-24 14:51:15.747 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 0.00 ms
+2026-05-24 14:51:15.747 | INFO     | rag.pipeline:_prepare:52 - Selected model: mistral
+2026-05-24 14:51:15.747 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.02159993164241314
+2026-05-24 14:51:15.747 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 14:51:15.747 | INFO     | observability.tracing:trace:17 - [TRACE START] generation
+2026-05-24 14:51:15.747 | INFO     | models.ollama_client:agenerate:69 - Async generation using mistral
+2026-05-24 14:53:40.591 | INFO     | observability.tracing:trace:31 - [TRACE END] generation | 144843.37 ms
+2026-05-24 14:53:40.591 | INFO     | rag.pipeline:arun:91 - Pipeline completed in 159638.20 ms
+2026-05-24 14:53:40.745 | INFO     | hallucination.detector:__init__:12 - Loading hallucination model: MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli
+2026-05-24 14:53:44.000 | INFO     | hallucination.detector:__init__:22 - Hallucination detector loaded
+2026-05-24 14:53:44.003 | INFO     | observability.tracing:trace:17 - [TRACE START] hallucination_detection
+2026-05-24 14:53:59.357 | INFO     | hallucination.detector:evaluate:51 - NLI label=neutral score=0.5263
+2026-05-24 14:53:59.358 | INFO     | observability.tracing:trace:31 - [TRACE END] hallucination_detection | 15355.05 ms
+2026-05-24 14:53:59.359 | INFO     | guardrails.output_guard:validate_output:20 - Running output guardrails
+2026-05-24 14:53:59.360 | INFO     | observability.metrics:record:11 - [METRIC] prompt_tokens=548
+2026-05-24 14:53:59.360 | INFO     | observability.metrics:record:11 - [METRIC] completion_tokens=124
+2026-05-24 14:53:59.361 | INFO     | observability.metrics:record:11 - [METRIC] latency_ms=159638.20147514343
+2026-05-24 14:53:59.361 | INFO     | observability.metrics:record:11 - [METRIC] hallucination_score=0.5262729525566101
+2026-05-24 14:53:59.362 | INFO     | observability.metrics:record:11 - [METRIC] hallucination_detected=0
+2026-05-24 14:53:59.362 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-05-24 14:53:59.362 | INFO     | observability.metrics:record:11 - [METRIC] response_cache_hit=0
+2026-05-24 14:53:59.363 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=2.508678436279297
+2026-05-24 14:53:59.364 | INFO     | memory.session_memory:add_message:68 - Message added to session: 1
+2026-05-24 14:53:59.364 | INFO     | memory.session_memory:add_message:68 - Message added to session: 1
+2026-05-24 14:53:59.364 | INFO     | memory.summarizer:summarize:28 - Generating conversation summary
+2026-05-24 14:53:59.365 | INFO     | models.model_registry:register:11 - Registering model: llama3.2:1b
+2026-05-24 14:53:59.365 | INFO     | models.ollama_client:generate:33 - Generating response using model: llama3.2:1b
+2026-05-24 14:54:11.294 | INFO     | memory.semantic_memory:remember:31 - Storing semantic memory
+2026-05-24 14:54:11.411 | INFO     | observability.metrics:record:11 - [METRIC] cache_invalidations=1
+2026-05-24 14:54:50.839 | INFO     | guardrails.input_guard:validate_input:34 - Running input guardrails
+2026-05-24 14:54:50.842 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-05-24 14:54:50.844 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.005500041879713535
+2026-05-24 14:54:50.845 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 14:54:50.900 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-05-24 14:54:50.902 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: Hi, i am rahul, pls tell me Holiday list of 2026 for wissen?
+2026-05-24 14:54:50.903 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.00800006091594696
+2026-05-24 14:54:50.904 | INFO     | observability.metrics:record:11 - [METRIC] cache_hits=1
+2026-05-24 14:54:50.904 | INFO     | rag.retriever:retrieve:34 - Retrieval cache hit
+2026-05-24 14:54:50.905 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 5.00 ms
+2026-05-24 14:54:50.905 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-05-24 14:54:50.906 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 1.00 ms
+2026-05-24 14:54:50.906 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-05-24 14:54:50.907 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 1.00 ms
+2026-05-24 14:54:50.907 | INFO     | rag.pipeline:_prepare:52 - Selected model: mistral
+2026-05-24 14:54:50.907 | INFO     | models.ollama_client:astream_generate:91 - Streaming generation using mistral
+2026-05-24 15:09:59.048 | INFO     | rag.pipeline:arun:72 - Starting async RAG pipeline for query: whats my name?
+2026-05-24 15:09:59.049 | INFO     | guardrails.input_guard:validate_input:34 - Running input guardrails
+2026-05-24 15:09:59.049 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-05-24 15:09:59.050 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.00500003807246685
+2026-05-24 15:09:59.050 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 15:09:59.087 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-05-24 15:09:59.088 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: whats my name?
+2026-05-24 15:09:59.089 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.006499933078885078
+2026-05-24 15:09:59.089 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 15:09:59.090 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-05-24 15:09:59.138 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 47.54 ms
+2026-05-24 15:09:59.138 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-05-24 15:09:59.139 | INFO     | rag.reranker:rerank:37 - Reranking 5 documents
+2026-05-24 15:09:59.305 | INFO     | rag.reranker:rerank:66 - Returning top 3 reranked documents
+2026-05-24 15:09:59.306 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=-10.9278 | Source=None
+2026-05-24 15:09:59.306 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=-10.9338 | Source=None
+2026-05-24 15:09:59.307 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=-11.1139 | Source=None
+2026-05-24 15:09:59.307 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-05-24 15:09:59.308 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-05-24 15:09:59.308 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=-10.92779541015625
+2026-05-24 15:09:59.309 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 221.79 ms
+2026-05-24 15:09:59.310 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-05-24 15:09:59.310 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 0.00 ms
+2026-05-24 15:09:59.311 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-05-24 15:09:59.311 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 0.00 ms
+2026-05-24 15:09:59.312 | INFO     | rag.pipeline:_prepare:52 - Selected model: mistral
+2026-05-24 15:09:59.312 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.04630000330507755
+2026-05-24 15:09:59.313 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 15:09:59.313 | INFO     | observability.tracing:trace:17 - [TRACE START] generation
+2026-05-24 15:09:59.313 | INFO     | models.ollama_client:agenerate:69 - Async generation using mistral
+2026-05-24 15:12:51.844 | INFO     | observability.tracing:trace:31 - [TRACE END] generation | 172530.79 ms
+2026-05-24 15:12:51.844 | INFO     | rag.pipeline:arun:91 - Pipeline completed in 172796.14 ms
+2026-05-24 15:12:51.844 | INFO     | observability.tracing:trace:17 - [TRACE START] hallucination_detection
+2026-05-24 15:13:09.059 | INFO     | hallucination.detector:evaluate:51 - NLI label=entailment score=0.7270
+2026-05-24 15:13:09.059 | INFO     | observability.tracing:trace:31 - [TRACE END] hallucination_detection | 17215.17 ms
+2026-05-24 15:13:09.059 | INFO     | guardrails.output_guard:validate_output:20 - Running output guardrails
+2026-05-24 15:13:09.059 | INFO     | observability.metrics:record:11 - [METRIC] prompt_tokens=744
+2026-05-24 15:13:09.059 | INFO     | observability.metrics:record:11 - [METRIC] completion_tokens=146
+2026-05-24 15:13:09.059 | INFO     | observability.metrics:record:11 - [METRIC] latency_ms=172796.1447238922
+2026-05-24 15:13:09.059 | INFO     | observability.metrics:record:11 - [METRIC] hallucination_score=0.72696852684021
+2026-05-24 15:13:09.059 | INFO     | observability.metrics:record:11 - [METRIC] hallucination_detected=0
+2026-05-24 15:13:09.059 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-05-24 15:13:09.059 | INFO     | observability.metrics:record:11 - [METRIC] response_cache_hit=0
+2026-05-24 15:13:09.059 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=-10.92779541015625
+2026-05-24 15:13:09.059 | INFO     | memory.session_memory:add_message:68 - Message added to session: 1
+2026-05-24 15:13:09.059 | INFO     | memory.session_memory:add_message:68 - Message added to session: 1
+2026-05-24 15:13:09.059 | INFO     | memory.summarizer:summarize:28 - Generating conversation summary
+2026-05-24 15:13:09.074 | INFO     | models.model_registry:register:11 - Registering model: llama3.2:1b
+2026-05-24 15:13:09.074 | INFO     | models.ollama_client:generate:33 - Generating response using model: llama3.2:1b
+2026-05-24 15:13:25.249 | INFO     | memory.semantic_memory:remember:31 - Storing semantic memory
+2026-05-24 15:13:25.392 | INFO     | observability.metrics:record:11 - [METRIC] cache_invalidations=2
+2026-05-24 15:35:08.141 | INFO     | main:shutdown_event:43 - Shutting down Industry Document RAG Engine...
+2026-05-24 15:51:26.463 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 15:51:50.640 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-05-24 15:52:09.165 | INFO     | main:startup_event:38 - Industry Document RAG Engine starting...
+2026-05-24 15:52:41.190 | INFO     | api.ingest:ingest_document:34 - File saved: data/raw/Wissen_Group Mediclaim Insurance and GPA Guide 2026-27.pdf
+2026-05-24 15:52:42.291 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_pages_processed=28
+2026-05-24 15:52:42.292 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_created=36
+2026-05-24 15:52:42.293 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_processing_time_ms=1100.684400065802
+2026-05-24 15:52:42.519 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_save_time_ms=225.78959993552417
+2026-05-24 15:52:42.520 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_saved=36
+2026-05-24 15:52:42.521 | INFO     | api.ingest:ingest_document:39 - Chunking complete: 36 chunks created
+2026-05-24 15:52:55.660 | INFO     | observability.metrics:record:11 - [METRIC] embedding_chunks_processed=36
+2026-05-24 15:52:55.660 | INFO     | observability.metrics:record:11 - [METRIC] embedding_processing_time_ms=13138.57349997852
+2026-05-24 15:52:55.661 | INFO     | observability.metrics:record:11 - [METRIC] embedding_model_used=BAAI/bge-small-en-v1.5
+2026-05-24 15:52:55.683 | INFO     | api.ingest:ingest_document:43 - Embedding complete: vectors generated
+2026-05-24 15:52:55.795 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_chunks_upserted=36
+2026-05-24 15:52:55.796 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_upsert_time_ms=111.91959993448108
+2026-05-24 15:52:55.796 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_collection=industry_documents
+2026-05-24 15:52:55.797 | INFO     | api.ingest:ingest_document:46 - ChromaDB storage complete: 36 chunks upserted
+2026-05-24 15:52:55.797 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_total_time_ms=14612.460099975578
+2026-05-24 15:52:55.798 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_success=1
+2026-05-24 15:53:36.649 | INFO     | guardrails.input_guard:validate_input:34 - Running input guardrails
+2026-05-24 15:53:36.649 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-05-24 15:53:36.651 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.005100038833916187
+2026-05-24 15:53:36.651 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 15:53:36.708 | INFO     | rag.reranker:__init__:13 - Loading reranker model: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-05-24 15:53:45.511 | INFO     | rag.reranker:__init__:21 - Reranker model loaded successfully
+2026-05-24 15:53:45.511 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-05-24 15:53:45.511 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: Hi, tell me about leave policy of wissen
+2026-05-24 15:53:45.511 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.008100061677396297
+2026-05-24 15:53:45.511 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 15:53:45.511 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-05-24 15:53:45.560 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 49.33 ms
+2026-05-24 15:53:45.561 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-05-24 15:53:45.561 | INFO     | rag.reranker:rerank:37 - Reranking 5 documents
+2026-05-24 15:53:45.885 | INFO     | rag.reranker:rerank:66 - Returning top 3 reranked documents
+2026-05-24 15:53:45.885 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=4.9920 | Source=None
+2026-05-24 15:53:45.885 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=3.3220 | Source=None
+2026-05-24 15:53:45.885 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=3.1951 | Source=None
+2026-05-24 15:53:45.885 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-05-24 15:53:45.885 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-05-24 15:53:45.885 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=4.991957664489746
+2026-05-24 15:53:45.885 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 373.83 ms
+2026-05-24 15:53:45.885 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-05-24 15:53:45.885 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 0.00 ms
+2026-05-24 15:53:45.885 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-05-24 15:53:45.885 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 0.00 ms
+2026-05-24 15:53:45.885 | INFO     | rag.pipeline:_prepare:52 - Selected model: mistral
+2026-05-24 15:53:45.885 | INFO     | models.ollama_client:astream_generate:91 - Streaming generation using mistral
+2026-05-24 16:12:01.911 | INFO     | rag.pipeline:arun:72 - Starting async RAG pipeline for query: Hi, Give me list of Holidays
+2026-05-24 16:12:01.912 | INFO     | guardrails.input_guard:validate_input:34 - Running input guardrails
+2026-05-24 16:12:01.913 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-05-24 16:12:01.913 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.01750001683831215
+2026-05-24 16:12:01.914 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 16:12:01.964 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-05-24 16:12:01.965 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: Hi, Give me list of Holidays
+2026-05-24 16:12:01.966 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.004299916326999664
+2026-05-24 16:12:01.966 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 16:12:01.966 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-05-24 16:12:02.006 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 40.06 ms
+2026-05-24 16:12:02.007 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-05-24 16:12:02.008 | INFO     | rag.reranker:rerank:37 - Reranking 5 documents
+2026-05-24 16:12:02.156 | INFO     | rag.reranker:rerank:66 - Returning top 3 reranked documents
+2026-05-24 16:12:02.157 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=-7.4711 | Source=None
+2026-05-24 16:12:02.158 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=-9.9620 | Source=None
+2026-05-24 16:12:02.158 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=-11.2294 | Source=None
+2026-05-24 16:12:02.159 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-05-24 16:12:02.159 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-05-24 16:12:02.160 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=-7.4710588455200195
+2026-05-24 16:12:02.161 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 197.19 ms
+2026-05-24 16:12:02.161 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-05-24 16:12:02.162 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 1.00 ms
+2026-05-24 16:12:02.162 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-05-24 16:12:02.163 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 1.00 ms
+2026-05-24 16:12:02.163 | INFO     | rag.pipeline:_prepare:52 - Selected model: mistral
+2026-05-24 16:12:02.164 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.057999975979328156
+2026-05-24 16:12:02.164 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-05-24 16:12:02.165 | INFO     | observability.tracing:trace:17 - [TRACE START] generation
+2026-05-24 16:12:02.165 | INFO     | models.ollama_client:agenerate:69 - Async generation using mistral
+2026-05-24 16:13:56.474 | INFO     | observability.tracing:trace:31 - [TRACE END] generation | 114309.27 ms
+2026-05-24 16:13:56.474 | INFO     | rag.pipeline:arun:91 - Pipeline completed in 114562.99 ms
+2026-05-24 16:13:56.754 | INFO     | hallucination.detector:__init__:12 - Loading hallucination model: MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli
+2026-05-24 16:14:01.138 | INFO     | hallucination.detector:__init__:22 - Hallucination detector loaded
+2026-05-24 16:14:01.141 | INFO     | observability.tracing:trace:17 - [TRACE START] hallucination_detection
+2026-05-24 16:14:16.224 | INFO     | hallucination.detector:evaluate:51 - NLI label=entailment score=0.9516
+2026-05-24 16:14:16.225 | INFO     | observability.tracing:trace:31 - [TRACE END] hallucination_detection | 15083.99 ms
+2026-05-24 16:14:16.226 | INFO     | guardrails.output_guard:validate_output:20 - Running output guardrails
+2026-05-24 16:14:16.226 | INFO     | observability.metrics:record:11 - [METRIC] prompt_tokens=386
+2026-05-24 16:14:16.227 | INFO     | observability.metrics:record:11 - [METRIC] completion_tokens=123
+2026-05-24 16:14:16.227 | INFO     | observability.metrics:record:11 - [METRIC] latency_ms=114562.98875808716
+2026-05-24 16:14:16.227 | INFO     | observability.metrics:record:11 - [METRIC] hallucination_score=0.9516353011131287
+2026-05-24 16:14:16.228 | INFO     | observability.metrics:record:11 - [METRIC] hallucination_detected=0
+2026-05-24 16:14:16.228 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-05-24 16:14:16.228 | INFO     | observability.metrics:record:11 - [METRIC] response_cache_hit=0
+2026-05-24 16:14:16.229 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=-7.4710588455200195
+2026-05-24 16:14:16.229 | INFO     | memory.session_memory:add_message:68 - Message added to session: session-bdce0847-a2c8-4e94-b639-aad2cdcd1acf
+2026-05-24 16:14:16.229 | INFO     | memory.session_memory:add_message:68 - Message added to session: session-bdce0847-a2c8-4e94-b639-aad2cdcd1acf
+2026-05-24 16:14:16.230 | INFO     | memory.summarizer:summarize:28 - Generating conversation summary
+2026-05-24 16:14:16.230 | INFO     | models.model_registry:register:11 - Registering model: llama3.2:1b
+2026-05-24 16:14:16.231 | INFO     | models.ollama_client:generate:33 - Generating response using model: llama3.2:1b
+2026-05-24 16:14:28.624 | INFO     | memory.semantic_memory:remember:31 - Storing semantic memory
+2026-05-24 16:14:28.763 | INFO     | observability.metrics:record:11 - [METRIC] cache_invalidations=2

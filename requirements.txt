@@ -1,0 +1,37 @@
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-dotenv
+loguru
+httpx
+transformers
+sentence-transformers
+torch
+numpy
+tenacity
+ollama
+langchain
+langchain-community
+langchain-text-splitters
+chromadb
+pypdf
+python-docx
+unstructured
+langsmith
+redis
+gunicorn
+pytest
+pytest-asyncio
+pydantic_settings
+pandas
+pyarrow
+
+#py -3.11 -m venv venv311
+#.\venv311\Scripts\Activate.ps1
+#pip install -r requirements.txt
+#pip install ollama
+#python backend/test_ollama.py
+#$env:API_TARGET="http://127.0.0.1:9000"; node frontend\server.js
+#http://127.0.0.1:5173/   frontend
+#http://127.0.0.1:8000/  backend

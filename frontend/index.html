@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Industry Document RAG</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <h1><strong>Industry Document RAG</strong></h1>
+          <p><strong>Created by Rahul Singh</strong></p>
+        </div>
+        <section class="session-panel" aria-label="Session">
+          <span class="session-label">Current session</span>
+          <div class="session-chip" id="sessionChip" title="Current session ID"></div>
+          <div class="session-actions">
+            <button id="copySessionBtn" type="button">Copy</button>
+            <button id="newSessionBtn" type="button">New</button>
+          </div>
+        </section>
+      </header>
+
+      <section class="tools-grid" aria-label="API tools">
+        <article class="panel">
+          <div class="panel-header">
+            <h2>Health</h2>
+            <button id="healthBtn" type="button">Check</button>
+          </div>
+          <pre id="healthOutput" class="output">No health check yet.</pre>
+        </article>
+
+        <article class="panel">
+          <div class="panel-header">
+            <h2>Ingest PDF</h2>
+          </div>
+          <form id="ingestForm" class="upload-form">
+            <input id="pdfFile" name="file" type="file" accept="application/pdf,.pdf" />
+            <button type="submit">Upload</button>
+          </form>
+          <div id="ingestStatus" class="status-line">Choose a PDF and upload.</div>
+          <pre id="ingestOutput" class="output">No ingestion request yet.</pre>
+        </article>
+
+        <article class="panel">
+          <div class="panel-header">
+            <h2>Metrics</h2>
+            <button id="metricsBtn" type="button">Load</button>
+          </div>
+          <pre id="metricsOutput" class="output">No metrics request yet.</pre>
+        </article>
+
+        <article class="panel">
+          <div class="panel-header">
+            <h2>Models</h2>
+            <button id="modelsBtn" type="button">Load</button>
+          </div>
+          <pre id="modelsOutput" class="output">No model request yet.</pre>
+        </article>
+      </section>
+
+      <section class="chat-panel" aria-label="Chat">
+        <div class="chat-header">
+          <div>
+            <h2>Chat</h2>
+            <p>Ask the RAG pipeline with the current session.</p>
+          </div>
+          <div class="mode-toggle" role="group" aria-label="Chat mode">
+            <button id="queryModeBtn" class="active" type="button">Query</button>
+            <button id="streamModeBtn" type="button">Stream</button>
+          </div>
+        </div>
+
+        <div id="chatMessages" class="messages" aria-live="polite"></div>
+
+        <form id="chatForm" class="chat-form">
+          <textarea id="chatInput" rows="2" placeholder="Ask a question about your documents..."></textarea>
+          <button id="sendBtn" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
