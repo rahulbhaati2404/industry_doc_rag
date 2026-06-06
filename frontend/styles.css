@@ -179,7 +179,6 @@ p {
 }
 
 .session-panel {
-  width: min(420px, 100%);
   justify-self: end;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 248, 239, 0.82));
