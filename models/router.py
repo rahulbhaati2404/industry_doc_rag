@@ -1,6 +1,5 @@
 from core.config import settings
 
-
 class ModelRouter:
     def route_generation_model(
         self,

@@ -7,7 +7,6 @@ import asyncio
 class Reranker:
 
     def __init__(self):
-
         self.model_name = settings.HF_RERANKER_MODEL
 
         logger.info(
@@ -48,9 +47,7 @@ class Reranker:
         )
 
         reranked = []
-
         for doc, score in zip(documents, scores):
-
             reranked.append(
                 {
                     **doc,
@@ -76,11 +73,8 @@ class Reranker:
     ):
 
         return await asyncio.to_thread(
-
             self.rerank,
-
             query,
-
             documents
         )
 

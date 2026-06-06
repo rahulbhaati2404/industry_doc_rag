@@ -1,6 +1,7 @@
 import re
 
 from core.logger import logger
+from guardrails.decision import GuardrailDecision
 
 
 class OutputGuard:
@@ -15,7 +16,7 @@ class OutputGuard:
     def validate_output(
         self,
         response: str
-    ):
+    ) -> GuardrailDecision:
 
         logger.info(
             "Running output guardrails"
@@ -37,12 +38,25 @@ class OutputGuard:
                     f"{pattern}"
                 )
 
-                return (
-                    "Response blocked due to "
-                    "safety policy."
+                return GuardrailDecision(
+                    blocked=True,
+                    message=(
+                        "I cannot provide that answer because it "
+                        "matches a restricted safety pattern. "
+                        "Please rephrase the request."
+                    ),
+                    cleaned_text=(
+                        "I cannot provide that answer because it "
+                        "matches a restricted safety pattern. "
+                        "Please rephrase the request."
+                    ),
+                    matched_pattern=pattern,
                 )
 
-        return response
+        return GuardrailDecision(
+            blocked=False,
+            cleaned_text=response,
+        )
 
 
 output_guard = OutputGuard()

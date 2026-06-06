@@ -1880,3 +1880,404 @@ Caused by: java.io.IOException: An established connection was aborted by the sof
 2026-05-24 16:14:16.231 | INFO     | models.ollama_client:generate:33 - Generating response using model: llama3.2:1b
 2026-05-24 16:14:28.624 | INFO     | memory.semantic_memory:remember:31 - Storing semantic memory
 2026-05-24 16:14:28.763 | INFO     | observability.metrics:record:11 - [METRIC] cache_invalidations=2
+2026-06-04 02:39:54.095 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-04 02:40:30.186 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-04 02:40:48.715 | INFO     | main:startup_event:37 - Company Document RAG Engine starting...
+2026-06-04 02:41:47.853 | INFO     | api.ingest:ingest_document:31 - File saved: data/raw/certificate-ojhkfcctrrsd-1774859965.pdf
+2026-06-04 02:41:47.878 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_pages_processed=1
+2026-06-04 02:41:47.878 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_created=1
+2026-06-04 02:41:47.880 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_processing_time_ms=24.846100015565753
+2026-06-04 02:41:48.138 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_save_time_ms=258.0011999816634
+2026-06-04 02:41:48.138 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_saved=1
+2026-06-04 02:41:48.139 | INFO     | api.ingest:ingest_document:36 - Chunking complete: 1 chunks created
+2026-06-04 02:41:56.755 | INFO     | observability.metrics:record:11 - [METRIC] embedding_chunks_processed=1
+2026-06-04 02:41:56.756 | INFO     | observability.metrics:record:11 - [METRIC] embedding_processing_time_ms=8615.699900023174
+2026-06-04 02:41:56.757 | INFO     | observability.metrics:record:11 - [METRIC] embedding_model_used=BAAI/bge-small-en-v1.5
+2026-06-04 02:41:56.769 | INFO     | api.ingest:ingest_document:40 - Embedding complete: vectors generated
+2026-06-04 02:41:56.811 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_chunks_upserted=1
+2026-06-04 02:41:56.812 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_upsert_time_ms=41.26879997784272
+2026-06-04 02:41:56.812 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_collection=industry_documents
+2026-06-04 02:41:56.813 | INFO     | api.ingest:ingest_document:43 - ChromaDB storage complete: 1 chunks upserted
+2026-06-04 02:41:56.813 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_total_time_ms=8963.340000016615
+2026-06-04 02:41:56.813 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_success=1
+2026-06-04 02:53:04.317 | INFO     | main:shutdown_event:42 - Shutting down Company Document RAG Engine...
+2026-06-04 02:53:10.054 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-04 02:53:34.819 | INFO     | main:startup_event:37 - Company Document RAG Engine starting...
+2026-06-04 02:53:48.478 | INFO     | main:shutdown_event:42 - Shutting down Company Document RAG Engine...
+2026-06-04 02:53:53.276 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-04 02:54:10.514 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-04 02:54:31.588 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-04 02:54:50.388 | INFO     | main:startup_event:37 - Company Document RAG Engine starting...
+2026-06-04 02:56:02.039 | INFO     | api.ingest:ingest_document:31 - File saved: data/raw/certificate-zk82qn9yxbdb-1779043093.pdf
+2026-06-04 02:56:02.055 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_pages_processed=1
+2026-06-04 02:56:02.056 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_created=1
+2026-06-04 02:56:02.056 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_processing_time_ms=15.252500015776604
+2026-06-04 02:56:02.113 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_save_time_ms=55.41530001210049
+2026-06-04 02:56:02.114 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_saved=1
+2026-06-04 02:56:02.114 | INFO     | api.ingest:ingest_document:36 - Chunking complete: 1 chunks created
+2026-06-04 02:56:10.766 | INFO     | observability.metrics:record:11 - [METRIC] embedding_chunks_processed=1
+2026-06-04 02:56:10.767 | INFO     | observability.metrics:record:11 - [METRIC] embedding_processing_time_ms=8652.46550005395
+2026-06-04 02:56:10.768 | INFO     | observability.metrics:record:11 - [METRIC] embedding_model_used=BAAI/bge-small-en-v1.5
+2026-06-04 02:56:10.781 | INFO     | api.ingest:ingest_document:40 - Embedding complete: vectors generated
+2026-06-04 02:56:10.819 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_chunks_upserted=1
+2026-06-04 02:56:10.820 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_upsert_time_ms=37.67589997733012
+2026-06-04 02:56:10.821 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_collection=industry_documents
+2026-06-04 02:56:10.821 | INFO     | api.ingest:ingest_document:43 - ChromaDB storage complete: 1 chunks upserted
+2026-06-04 02:56:10.821 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_total_time_ms=8784.225500014145
+2026-06-04 02:56:10.822 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_success=1
+2026-06-04 02:56:40.703 | INFO     | guardrails.input_guard:validate_input:32 - Running input guardrails
+2026-06-04 02:56:40.706 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-04 02:56:40.707 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.007099995855242014
+2026-06-04 02:56:40.707 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-04 02:56:40.812 | INFO     | rag.reranker:__init__:12 - Loading reranker model: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-06-04 02:56:50.579 | INFO     | rag.reranker:__init__:20 - Reranker model loaded successfully
+2026-06-04 02:56:50.588 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-04 02:56:50.589 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: Hi, i am rahul, can you tell me Comapny Holiday List for 2026
+2026-06-04 02:56:50.590 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.005800044164061546
+2026-06-04 02:56:50.591 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-04 02:56:50.591 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-04 02:56:50.717 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 124.94 ms
+2026-06-04 02:56:50.718 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-06-04 02:56:50.718 | INFO     | rag.reranker:rerank:36 - Reranking 5 documents
+2026-06-04 02:56:51.091 | INFO     | rag.reranker:rerank:63 - Returning top 3 reranked documents
+2026-06-04 02:56:51.091 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=-1.8584 | Source=None
+2026-06-04 02:56:51.091 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=-4.5067 | Source=None
+2026-06-04 02:56:51.091 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=-10.9268 | Source=None
+2026-06-04 02:56:51.091 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-06-04 02:56:51.098 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-06-04 02:56:51.098 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=-1.8584426641464233
+2026-06-04 02:56:51.098 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 510.26 ms
+2026-06-04 02:56:51.100 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-06-04 02:56:51.100 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 0.00 ms
+2026-06-04 02:56:51.100 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-06-04 02:56:51.100 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 0.00 ms
+2026-06-04 02:56:51.100 | INFO     | rag.pipeline:_prepare:52 - Selected model: mistral
+2026-06-04 02:56:51.102 | INFO     | models.ollama_client:astream_generate:87 - Streaming generation using mistral
+2026-06-04 02:59:33.548 | INFO     | guardrails.input_guard:validate_input:32 - Running input guardrails
+2026-06-04 02:59:33.549 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-04 02:59:33.550 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.00689999433234334
+2026-06-04 02:59:33.550 | INFO     | observability.metrics:record:11 - [METRIC] cache_hits=1
+2026-06-04 02:59:33.551 | INFO     | memory.semantic_memory:recall:73 - Semantic memory cache hit
+2026-06-04 02:59:33.551 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-04 02:59:33.552 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: Hi, i am rahul, can you tell me Comapny Holiday List for 2026
+2026-06-04 02:59:33.552 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.005799985956400633
+2026-06-04 02:59:33.552 | INFO     | observability.metrics:record:11 - [METRIC] cache_hits=1
+2026-06-04 02:59:33.553 | INFO     | rag.retriever:retrieve:34 - Retrieval cache hit
+2026-06-04 02:59:33.553 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 1.99 ms
+2026-06-04 02:59:33.554 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-06-04 02:59:33.554 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 0.00 ms
+2026-06-04 02:59:33.555 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-06-04 02:59:33.555 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 0.00 ms
+2026-06-04 02:59:33.555 | INFO     | rag.pipeline:_prepare:52 - Selected model: mistral
+2026-06-04 02:59:33.556 | INFO     | models.ollama_client:astream_generate:87 - Streaming generation using mistral
+2026-06-04 03:00:38.661 | INFO     | guardrails.input_guard:validate_input:32 - Running input guardrails
+2026-06-04 03:00:38.662 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-04 03:00:38.662 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.00700005330145359
+2026-06-04 03:00:38.662 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-04 03:00:38.694 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-04 03:00:38.694 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: Comapny Holiday List for 2026
+2026-06-04 03:00:38.703 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.005099980626255274
+2026-06-04 03:00:38.703 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-04 03:00:38.703 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-04 03:00:38.740 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 37.11 ms
+2026-06-04 03:00:38.741 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-06-04 03:00:38.741 | INFO     | rag.reranker:rerank:36 - Reranking 5 documents
+2026-06-04 03:00:38.888 | INFO     | rag.reranker:rerank:63 - Returning top 3 reranked documents
+2026-06-04 03:00:38.889 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=0.4518 | Source=None
+2026-06-04 03:00:38.889 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=-8.8521 | Source=None
+2026-06-04 03:00:38.889 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=-11.0113 | Source=None
+2026-06-04 03:00:38.890 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-06-04 03:00:38.890 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-06-04 03:00:38.891 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=0.4517962336540222
+2026-06-04 03:00:38.892 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 197.11 ms
+2026-06-04 03:00:38.892 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-06-04 03:00:38.892 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 0.00 ms
+2026-06-04 03:00:38.893 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-06-04 03:00:38.893 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 0.00 ms
+2026-06-04 03:00:38.894 | INFO     | rag.pipeline:_prepare:52 - Selected model: mistral
+2026-06-04 03:00:38.894 | INFO     | models.ollama_client:astream_generate:87 - Streaming generation using mistral
+2026-06-04 03:02:07.781 | INFO     | guardrails.input_guard:validate_input:32 - Running input guardrails
+2026-06-04 03:02:07.782 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-04 03:02:07.782 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.004300032742321491
+2026-06-04 03:02:07.783 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-04 03:02:07.816 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-04 03:02:07.817 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: what is my name?
+2026-06-04 03:02:07.817 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.006799993570894003
+2026-06-04 03:02:07.818 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-04 03:02:07.818 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-04 03:02:07.857 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 38.54 ms
+2026-06-04 03:02:07.858 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-06-04 03:02:07.858 | INFO     | rag.reranker:rerank:36 - Reranking 5 documents
+2026-06-04 03:02:08.021 | INFO     | rag.reranker:rerank:63 - Returning top 3 reranked documents
+2026-06-04 03:02:08.022 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=-10.9494 | Source=None
+2026-06-04 03:02:08.022 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=-11.0496 | Source=None
+2026-06-04 03:02:08.023 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=-11.1792 | Source=None
+2026-06-04 03:02:08.023 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-06-04 03:02:08.024 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-06-04 03:02:08.024 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=-10.949383735656738
+2026-06-04 03:02:08.025 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 208.68 ms
+2026-06-04 03:02:08.026 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-06-04 03:02:08.026 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 0.00 ms
+2026-06-04 03:02:08.027 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-06-04 03:02:08.027 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 0.00 ms
+2026-06-04 03:02:08.028 | INFO     | rag.pipeline:_prepare:52 - Selected model: mistral
+2026-06-04 03:02:08.028 | INFO     | models.ollama_client:astream_generate:87 - Streaming generation using mistral
+2026-06-04 03:03:33.140 | INFO     | guardrails.input_guard:validate_input:32 - Running input guardrails
+2026-06-04 03:03:33.141 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-04 03:03:33.141 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.003100023604929447
+2026-06-04 03:03:33.142 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-04 03:03:33.184 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-04 03:03:33.184 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: explain me the leave policy wissen
+2026-06-04 03:03:33.185 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.003300025127828121
+2026-06-04 03:03:33.185 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-04 03:03:33.186 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-04 03:03:33.225 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 38.96 ms
+2026-06-04 03:03:33.226 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-06-04 03:03:33.226 | INFO     | rag.reranker:rerank:36 - Reranking 5 documents
+2026-06-04 03:03:33.476 | INFO     | rag.reranker:rerank:63 - Returning top 3 reranked documents
+2026-06-04 03:03:33.477 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=5.6797 | Source=None
+2026-06-04 03:03:33.478 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=3.4290 | Source=None
+2026-06-04 03:03:33.478 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=3.0389 | Source=None
+2026-06-04 03:03:33.478 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-06-04 03:03:33.479 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-06-04 03:03:33.479 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=5.679691314697266
+2026-06-04 03:03:33.480 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 296.71 ms
+2026-06-04 03:03:33.481 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-06-04 03:03:33.481 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 0.00 ms
+2026-06-04 03:03:33.482 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-06-04 03:03:33.482 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 0.00 ms
+2026-06-04 03:03:33.482 | INFO     | rag.pipeline:_prepare:52 - Selected model: mistral
+2026-06-04 03:03:33.483 | INFO     | models.ollama_client:astream_generate:87 - Streaming generation using mistral
+2026-06-04 03:05:27.042 | INFO     | guardrails.input_guard:validate_input:32 - Running input guardrails
+2026-06-04 03:05:27.043 | WARNING  | guardrails.input_guard:validate_input:54 - Prompt injection detected: bypass restrictions
+2026-06-05 00:16:18.221 | INFO     | main:shutdown_event:42 - Shutting down Company Document RAG Engine...
+2026-06-05 00:16:25.460 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-05 00:16:28.834 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-05 00:16:34.163 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-05 00:16:56.139 | INFO     | main:startup_event:37 - Company Document RAG Engine starting...
+2026-06-05 00:17:25.678 | INFO     | main:shutdown_event:42 - Shutting down Company Document RAG Engine...
+2026-06-05 00:17:29.804 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-05 00:17:51.572 | INFO     | main:startup_event:37 - Company Document RAG Engine starting...
+2026-06-05 00:17:51.586 | INFO     | guardrails.input_guard:validate_input:32 - Running input guardrails
+2026-06-05 00:17:51.588 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-05 00:17:51.588 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.0036999699659645557
+2026-06-05 00:17:51.589 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-05 00:17:58.085 | INFO     | rag.reranker:__init__:12 - Loading reranker model: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-06-05 00:18:05.700 | INFO     | rag.reranker:__init__:20 - Reranker model loaded successfully
+2026-06-05 00:18:05.702 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-05 00:18:05.703 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: Hi
+2026-06-05 00:18:05.705 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.004599976819008589
+2026-06-05 00:18:05.705 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-05 00:18:05.705 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-05 00:18:05.852 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 147.39 ms
+2026-06-05 00:18:05.853 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-06-05 00:18:05.853 | INFO     | rag.reranker:rerank:36 - Reranking 5 documents
+2026-06-05 00:18:06.028 | INFO     | rag.reranker:rerank:63 - Returning top 3 reranked documents
+2026-06-05 00:18:06.031 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=-8.3913 | Source=None
+2026-06-05 00:18:06.031 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=-9.1220 | Source=None
+2026-06-05 00:18:06.031 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=-9.2529 | Source=None
+2026-06-05 00:18:06.032 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-06-05 00:18:06.032 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-06-05 00:18:06.033 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=-8.391294479370117
+2026-06-05 00:18:06.034 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 331.53 ms
+2026-06-05 00:18:06.034 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-06-05 00:18:06.034 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 0.00 ms
+2026-06-05 00:18:06.035 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-06-05 00:18:06.035 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 0.00 ms
+2026-06-05 00:18:06.036 | INFO     | rag.pipeline:_prepare:52 - Selected model: mistral
+2026-06-05 00:18:06.036 | INFO     | models.ollama_client:astream_generate:87 - Streaming generation using mistral
+2026-06-07 01:09:03.870 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-07 01:09:39.271 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-07 01:09:57.024 | INFO     | main:startup_event:37 - Enterprise Document RAG Engine starting...
+2026-06-07 01:11:21.797 | INFO     | rag.pipeline:arun:104 - Starting async RAG pipeline for query: Hi
+2026-06-07 01:11:21.806 | INFO     | guardrails.input_guard:validate_input:33 - Running input guardrails
+2026-06-07 01:11:21.809 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:11:21.810 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.005199995939619839
+2026-06-07 01:11:21.810 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:11:32.899 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:11:32.900 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.004999994416721165
+2026-06-07 01:11:32.900 | INFO     | observability.metrics:record:11 - [METRIC] cache_hits=1
+2026-06-07 01:11:32.901 | INFO     | memory.semantic_memory:recall:73 - Semantic memory cache hit
+2026-06-07 01:11:32.904 | INFO     | rag.reranker:__init__:12 - Loading reranker model: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-06-07 01:11:43.715 | INFO     | rag.reranker:__init__:20 - Reranker model loaded successfully
+2026-06-07 01:11:43.717 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-07 01:11:43.719 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: Hi
+2026-06-07 01:11:43.719 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.0046000059228390455
+2026-06-07 01:11:43.720 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:11:43.720 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-07 01:11:43.848 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 127.30 ms
+2026-06-07 01:11:43.848 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-06-07 01:11:43.848 | INFO     | rag.reranker:rerank:36 - Reranking 5 documents
+2026-06-07 01:11:44.112 | INFO     | rag.reranker:rerank:63 - Returning top 3 reranked documents
+2026-06-07 01:11:44.112 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=-8.3913 | Source=None
+2026-06-07 01:11:44.112 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=-9.1220 | Source=None
+2026-06-07 01:11:44.112 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=-9.2529 | Source=None
+2026-06-07 01:11:44.112 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-06-07 01:11:44.112 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-06-07 01:11:44.112 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=-8.391294479370117
+2026-06-07 01:11:44.112 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 394.68 ms
+2026-06-07 01:11:44.112 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-06-07 01:11:44.112 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 0.00 ms
+2026-06-07 01:11:44.112 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-06-07 01:11:44.112 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 0.00 ms
+2026-06-07 01:11:44.112 | INFO     | rag.pipeline:_prepare:82 - Selected model: mistral
+2026-06-07 01:11:44.112 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.020799998310394585
+2026-06-07 01:11:44.112 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:11:44.112 | INFO     | observability.tracing:trace:17 - [TRACE START] generation
+2026-06-07 01:11:44.112 | INFO     | models.ollama_client:agenerate:69 - Async generation using mistral
+2026-06-07 01:13:35.226 | INFO     | observability.tracing:trace:31 - [TRACE END] generation | 111114.33 ms
+2026-06-07 01:13:35.227 | INFO     | rag.pipeline:arun:160 - Pipeline completed in 133430.05 ms
+2026-06-07 01:13:35.361 | INFO     | hallucination.detector:__init__:11 - Loading hallucination model: MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli
+2026-06-07 01:13:38.860 | INFO     | hallucination.detector:__init__:21 - Hallucination detector loaded
+2026-06-07 01:13:38.867 | INFO     | observability.tracing:trace:17 - [TRACE START] hallucination_detection
+2026-06-07 01:13:50.547 | INFO     | hallucination.detector:evaluate:48 - NLI label=entailment score=0.4995
+2026-06-07 01:13:50.548 | INFO     | observability.tracing:trace:31 - [TRACE END] hallucination_detection | 11681.00 ms
+2026-06-07 01:13:50.548 | INFO     | guardrails.output_guard:validate_output:21 - Running output guardrails
+2026-06-07 01:13:50.549 | INFO     | observability.metrics:record:11 - [METRIC] prompt_tokens=426
+2026-06-07 01:13:50.549 | INFO     | observability.metrics:record:11 - [METRIC] completion_tokens=113
+2026-06-07 01:13:50.550 | INFO     | observability.metrics:record:11 - [METRIC] latency_ms=133430.05275726318
+2026-06-07 01:13:50.550 | INFO     | observability.metrics:record:11 - [METRIC] hallucination_score=0.49951475858688354
+2026-06-07 01:13:50.550 | INFO     | observability.metrics:record:11 - [METRIC] hallucination_detected=0
+2026-06-07 01:13:50.551 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-06-07 01:13:50.551 | INFO     | observability.metrics:record:11 - [METRIC] response_cache_hit=0
+2026-06-07 01:13:50.551 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=-8.391294479370117
+2026-06-07 01:13:50.552 | INFO     | memory.session_memory:add_message:60 - Message added to session: session-f07dff00-4d58-4696-a3c7-e2bf04d83e5c
+2026-06-07 01:13:50.552 | INFO     | memory.session_memory:add_message:60 - Message added to session: session-f07dff00-4d58-4696-a3c7-e2bf04d83e5c
+2026-06-07 01:13:50.552 | INFO     | memory.summarizer:summarize:28 - Generating conversation summary
+2026-06-07 01:13:50.553 | INFO     | models.model_registry:register:11 - Registering model: llama3.2:1b
+2026-06-07 01:13:50.553 | INFO     | models.ollama_client:generate:33 - Generating response using model: llama3.2:1b
+2026-06-07 01:14:03.505 | INFO     | memory.semantic_memory:remember:31 - Storing semantic memory
+2026-06-07 01:14:03.612 | INFO     | observability.metrics:record:11 - [METRIC] cache_invalidations=1
+2026-06-07 01:14:42.227 | INFO     | rag.pipeline:arun:104 - Starting async RAG pipeline for query: Give me Company Holiday List for 2026
+2026-06-07 01:14:42.228 | INFO     | guardrails.input_guard:validate_input:33 - Running input guardrails
+2026-06-07 01:14:42.230 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:14:42.230 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.0046000059228390455
+2026-06-07 01:14:42.231 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:14:42.273 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:14:42.273 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.006199989002197981
+2026-06-07 01:14:42.274 | INFO     | observability.metrics:record:11 - [METRIC] cache_hits=1
+2026-06-07 01:14:42.274 | INFO     | memory.semantic_memory:recall:73 - Semantic memory cache hit
+2026-06-07 01:14:42.275 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-07 01:14:42.275 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: Give me Company Holiday List for 2026 Recent conversation: user: Hi assistant:  The Employee Insurance Coverage Guide and Group Mediclaim's Personal Accident information are available. However, specific details regarding the guide or the personal accident coverage are not provided in the given documents. For a comprehensive understanding, I recommend referring to the original sources of these documents or reaching out to your HR department for further assistance. Regarding contacts within Bangalore, they are as follows: - Bhaskar Rajagopal (9900129730) - Uma Ravi (8951121707) - Mrigya Das (8979029191) - Akhila URS (8095376458) - Preethi Pandit (9538024068) - Anitha Rajesware (9790966323) Semantic memory: Here is a concise summary of the conversation context: The user inquires about specific details related to Employee Insurance Coverage Guide and Group Mediclaim, but no information is provided. The assistant recommends referring to original sources or contacting HR for assistance. Additionally, contact information for contacts within Bangalore is shared.
+2026-06-07 01:14:42.276 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.00340001133736223
+2026-06-07 01:14:42.276 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:14:42.277 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-07 01:14:42.407 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 130.29 ms
+2026-06-07 01:14:42.408 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-06-07 01:14:42.408 | INFO     | rag.reranker:rerank:36 - Reranking 5 documents
+2026-06-07 01:14:42.833 | INFO     | rag.reranker:rerank:63 - Returning top 3 reranked documents
+2026-06-07 01:14:42.834 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=-3.1410 | Source=None
+2026-06-07 01:14:42.835 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=-4.0552 | Source=None
+2026-06-07 01:14:42.835 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=-4.4550 | Source=None
+2026-06-07 01:14:42.835 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-06-07 01:14:42.836 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-06-07 01:14:42.836 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=-3.14104962348938
+2026-06-07 01:14:42.838 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 563.49 ms
+2026-06-07 01:14:42.838 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-06-07 01:14:42.838 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 0.00 ms
+2026-06-07 01:14:42.839 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-06-07 01:14:42.839 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 0.00 ms
+2026-06-07 01:14:42.840 | INFO     | rag.pipeline:_prepare:82 - Selected model: mistral
+2026-06-07 01:14:42.840 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.02269999822601676
+2026-06-07 01:14:42.842 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:14:42.842 | INFO     | observability.tracing:trace:17 - [TRACE START] generation
+2026-06-07 01:14:42.843 | INFO     | models.ollama_client:agenerate:69 - Async generation using mistral
+2026-06-07 01:15:11.917 | INFO     | main:shutdown_event:42 - Shutting down Enterprise Document RAG Engine...
+2026-06-07 01:15:11.935 | INFO     | observability.tracing:trace:31 - [TRACE END] generation | 29092.85 ms
+2026-06-07 01:15:59.449 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-07 01:16:27.474 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-07 01:16:45.382 | INFO     | main:startup_event:37 - Enterprise Document RAG Engine starting...
+2026-06-07 01:17:27.880 | INFO     | rag.pipeline:arun:104 - Starting async RAG pipeline for query: Company Holiday List for 2026
+2026-06-07 01:17:27.881 | INFO     | guardrails.input_guard:validate_input:33 - Running input guardrails
+2026-06-07 01:17:27.883 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:17:27.884 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.0048000074457377195
+2026-06-07 01:17:27.885 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:17:39.636 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:17:39.637 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.006599992047995329
+2026-06-07 01:17:39.637 | INFO     | observability.metrics:record:11 - [METRIC] cache_hits=1
+2026-06-07 01:17:39.637 | INFO     | memory.semantic_memory:recall:73 - Semantic memory cache hit
+2026-06-07 01:17:39.641 | INFO     | rag.reranker:__init__:12 - Loading reranker model: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-06-07 01:17:51.749 | INFO     | rag.reranker:__init__:20 - Reranker model loaded successfully
+2026-06-07 01:17:51.752 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-07 01:17:51.754 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: Company Holiday List for 2026
+2026-06-07 01:17:51.754 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.0042000028770416975
+2026-06-07 01:17:51.754 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:17:51.755 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-07 01:17:51.890 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 135.78 ms
+2026-06-07 01:17:51.890 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-06-07 01:17:51.891 | INFO     | rag.reranker:rerank:36 - Reranking 5 documents
+2026-06-07 01:17:52.030 | INFO     | rag.reranker:rerank:63 - Returning top 3 reranked documents
+2026-06-07 01:17:52.031 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=1.4253 | Source=None
+2026-06-07 01:17:52.031 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=-4.8625 | Source=None
+2026-06-07 01:17:52.031 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=-6.5545 | Source=None
+2026-06-07 01:17:52.032 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-06-07 01:17:52.032 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-06-07 01:17:52.032 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=1.4252612590789795
+2026-06-07 01:17:52.033 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 281.49 ms
+2026-06-07 01:17:52.034 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-06-07 01:17:52.034 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 0.00 ms
+2026-06-07 01:17:52.034 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-06-07 01:17:52.035 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 1.00 ms
+2026-06-07 01:17:52.035 | INFO     | rag.pipeline:_prepare:82 - Selected model: mistral
+2026-06-07 01:17:52.036 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.023600005079060793
+2026-06-07 01:17:52.036 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:17:52.036 | INFO     | observability.tracing:trace:17 - [TRACE START] generation
+2026-06-07 01:17:52.037 | INFO     | models.ollama_client:agenerate:69 - Async generation using mistral
+2026-06-07 01:18:58.074 | INFO     | observability.tracing:trace:31 - [TRACE END] generation | 66038.14 ms
+2026-06-07 01:18:58.075 | INFO     | rag.pipeline:arun:160 - Pipeline completed in 90194.79 ms
+2026-06-07 01:18:58.193 | INFO     | hallucination.detector:__init__:11 - Loading hallucination model: MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli
+2026-06-07 01:19:02.265 | INFO     | hallucination.detector:__init__:21 - Hallucination detector loaded
+2026-06-07 01:19:02.265 | INFO     | observability.tracing:trace:17 - [TRACE START] hallucination_detection
+2026-06-07 01:19:10.667 | INFO     | hallucination.detector:evaluate:48 - NLI label=entailment score=0.7690
+2026-06-07 01:19:10.668 | INFO     | observability.tracing:trace:31 - [TRACE END] hallucination_detection | 8403.31 ms
+2026-06-07 01:19:10.669 | INFO     | guardrails.output_guard:validate_output:21 - Running output guardrails
+2026-06-07 01:19:10.670 | INFO     | observability.metrics:record:11 - [METRIC] prompt_tokens=416
+2026-06-07 01:19:10.670 | INFO     | observability.metrics:record:11 - [METRIC] completion_tokens=65
+2026-06-07 01:19:10.671 | INFO     | observability.metrics:record:11 - [METRIC] latency_ms=90194.7865486145
+2026-06-07 01:19:10.671 | INFO     | observability.metrics:record:11 - [METRIC] hallucination_score=0.7689757943153381
+2026-06-07 01:19:10.671 | INFO     | observability.metrics:record:11 - [METRIC] hallucination_detected=0
+2026-06-07 01:19:10.672 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-06-07 01:19:10.672 | INFO     | observability.metrics:record:11 - [METRIC] response_cache_hit=0
+2026-06-07 01:19:10.672 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=1.4252612590789795
+2026-06-07 01:19:10.673 | INFO     | memory.session_memory:add_message:60 - Message added to session: session-fa287808-d0cd-4b12-bbf6-254e3e48bd2f
+2026-06-07 01:19:10.673 | INFO     | memory.session_memory:add_message:60 - Message added to session: session-fa287808-d0cd-4b12-bbf6-254e3e48bd2f
+2026-06-07 01:19:10.674 | INFO     | memory.summarizer:summarize:28 - Generating conversation summary
+2026-06-07 01:19:10.674 | INFO     | models.model_registry:register:11 - Registering model: llama3.2:1b
+2026-06-07 01:19:10.674 | INFO     | models.ollama_client:generate:33 - Generating response using model: llama3.2:1b
+2026-06-07 01:19:21.610 | INFO     | memory.semantic_memory:remember:31 - Storing semantic memory
+2026-06-07 01:19:21.711 | INFO     | observability.metrics:record:11 - [METRIC] cache_invalidations=1
+2026-06-07 01:20:13.748 | INFO     | guardrails.input_guard:validate_input:33 - Running input guardrails
+2026-06-07 01:20:13.750 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:20:13.751 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.0051000097300857306
+2026-06-07 01:20:13.751 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:20:13.793 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:20:13.793 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.008499991963617504
+2026-06-07 01:20:13.794 | INFO     | observability.metrics:record:11 - [METRIC] cache_hits=1
+2026-06-07 01:20:13.794 | INFO     | memory.semantic_memory:recall:73 - Semantic memory cache hit
+2026-06-07 01:20:13.795 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-07 01:20:13.795 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: i need 2026 Holiday List of Company Recent conversation: user: Company Holiday List for 2026 assistant:  The company's holiday list for the year 2026 includes: 1. Republic day on January 26 (Monday) 2. Holi on March 3 (Tuesday) 3. Good Friday (Date not specified, assuming it falls on its traditional date in 2026) The list provided is for the cities Bangalore, Chennai, Mumbai, Pune, and Gurgaon. Semantic memory: Here's a concise summary of the conversation context: * The company has created a holiday list for 2026. * The list includes specific dates: Republic Day (January 26), Holi (March 3), and Good Friday (date not specified). * The list is tailored to cities in India, specifically Bangalore, Chennai, Mumbai, Pune, and Gurgaon.
+2026-06-07 01:20:13.796 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.0039000005926936865
+2026-06-07 01:20:13.796 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:20:13.797 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-07 01:20:13.900 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 102.65 ms
+2026-06-07 01:20:13.901 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-06-07 01:20:13.901 | INFO     | rag.reranker:rerank:36 - Reranking 5 documents
+2026-06-07 01:20:14.299 | INFO     | rag.reranker:rerank:63 - Returning top 3 reranked documents
+2026-06-07 01:20:14.300 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=-1.4982 | Source=None
+2026-06-07 01:20:14.300 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=-5.3605 | Source=None
+2026-06-07 01:20:14.301 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=-5.5262 | Source=None
+2026-06-07 01:20:14.301 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-06-07 01:20:14.302 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-06-07 01:20:14.302 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=-1.4981639385223389
+2026-06-07 01:20:14.303 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 507.75 ms
+2026-06-07 01:20:14.304 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-06-07 01:20:14.304 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 0.00 ms
+2026-06-07 01:20:14.305 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-06-07 01:20:14.305 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 0.00 ms
+2026-06-07 01:20:14.306 | INFO     | rag.pipeline:_prepare:82 - Selected model: mistral
+2026-06-07 01:20:14.306 | INFO     | models.ollama_client:astream_generate:87 - Streaming generation using mistral
+2026-06-07 01:24:43.546 | INFO     | main:shutdown_event:42 - Shutting down Enterprise Document RAG Engine...
+2026-06-07 01:24:48.549 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-07 01:25:27.779 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-07 01:25:48.597 | INFO     | main:startup_event:37 - Enterprise Document RAG Engine starting...
+2026-06-07 01:28:27.519 | INFO     | models.model_registry:register:11 - Registering model: ollama_client

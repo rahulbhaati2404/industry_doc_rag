@@ -3,17 +3,13 @@ from core.logger import logger
 
 from models.ollama_client import ollama_client
 
-
 class HallucinationMitigator:
 
     STRICT_PROMPT = """
         You must answer ONLY from the provided context.
-
         Do NOT use outside knowledge.
-
         If the answer is not explicitly present,
         say:
-
         "I could not find enough information in the provided documents."
     """
 
@@ -45,10 +41,7 @@ class HallucinationMitigator:
             model=model,
             temperature=0.0
         )
-
         return response
 
 
-hallucination_mitigator = (
-    HallucinationMitigator()
-)
+hallucination_mitigator = (HallucinationMitigator())

@@ -8,9 +8,7 @@ from core.logger import logger
 class SessionMemory:
 
     def __init__(self):
-
         self.sessions = defaultdict(list)
-
         self.expiry = {}
 
     def _cleanup_expired(self):
@@ -18,24 +16,18 @@ class SessionMemory:
         now = datetime.utcnow()
 
         expired = [
-
             sid
-
             for sid, expiry in (
                 self.expiry.items()
             )
-
             if expiry < now
         ]
 
         for sid in expired:
-
             logger.info(
                 f"Cleaning expired session: {sid}"
             )
-
             del self.sessions[sid]
-
             del self.expiry[sid]
 
     def add_message(
@@ -76,12 +68,10 @@ class SessionMemory:
     ):
 
         self._cleanup_expired()
-
         history = self.sessions.get(
             session_id,
             []
         )
-
         return history[
             -settings.MEMORY_WINDOW_SIZE:
         ]

@@ -8,5 +8,4 @@ router = APIRouter()
 
 @router.get("/metrics")
 async def metrics():
-
     return metrics_collector.summary()

@@ -3,23 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Industry Document RAG</title>
+    <title>Enterprise Document RAG</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main class="app-shell">
       <header class="topbar">
-        <div>
-          <h1><strong>Industry Document RAG</strong></h1>
-          <p><strong>Created by Rahul Singh</strong></p>
-        </div>
-        <section class="session-panel" aria-label="Session">
-          <span class="session-label">Current session</span>
-          <div class="session-chip" id="sessionChip" title="Current session ID"></div>
-          <div class="session-actions">
-            <button id="copySessionBtn" type="button">Copy</button>
-            <button id="newSessionBtn" type="button">New</button>
+        <div class="hero-copy">
+          <span class="eyebrow">Document intelligence workspace</span>
+          <h1>Enterprise Document RAG</h1>
+          <p>Search, ingest, and chat with your documents in a cleaner workspace.</p>
+          <div class="hero-pills" aria-label="Highlights">
+            <span>Fast retrieval</span>
+            <span>Stream or query</span>
+            <span>Session switching</span>
           </div>
+        </div>
+        <section class="session-panel" aria-label="Session controls">
+          <div class="session-panel-header">
+            <div>
+              <span class="session-label">Workspace session</span>
+              <strong id="activeSessionName" class="session-name">Session</strong>
+            </div>
+            <span class="session-badge" id="sessionCountBadge">1 saved</span>
+          </div>
+          <label class="session-picker">
+            <span>Switch session</span>
+            <select id="sessionSelect" aria-label="Switch session"></select>
+          </label>
+          <div class="session-actions">
+            <button id="newSessionBtn" type="button">New session</button>
+            <button id="copySessionBtn" type="button">Copy ID</button>
+          </div>
+          <p class="session-help">Each session keeps its own conversation context.</p>
         </section>
       </header>
 

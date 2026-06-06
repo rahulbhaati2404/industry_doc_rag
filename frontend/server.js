@@ -4,7 +4,7 @@ const path = require("path");
 
 const HOST = process.env.FRONTEND_HOST || "127.0.0.1";
 const PORT = Number(process.env.FRONTEND_PORT || 5173);
-const API_TARGET = process.env.API_TARGET || "http://127.0.0.1:8000";
+const API_TARGET = process.env.API_TARGET || "http://127.0.0.1:9000";
 const ROOT = __dirname;
 
 const contentTypes = {

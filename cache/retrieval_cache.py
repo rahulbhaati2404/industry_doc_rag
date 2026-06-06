@@ -1,7 +1,5 @@
 from typing import Any
-
 from cache.cache_manager import cache_manager
-
 
 class RetrievalCache:
     """Cache retrieval and reranking results by query and top_k."""

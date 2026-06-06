@@ -1,8 +1,11 @@
 const API_BASE = "/api/v1";
-const SESSION_KEY = "industry-rag-session-id";
+const SESSION_LIST_KEY = "enterprise-rag-sessions";
+const SESSION_KEY = "enterprise-rag-session-id";
 
 const elements = {
-  sessionChip: document.getElementById("sessionChip"),
+  activeSessionName: document.getElementById("activeSessionName"),
+  sessionCountBadge: document.getElementById("sessionCountBadge"),
+  sessionSelect: document.getElementById("sessionSelect"),
   copySessionBtn: document.getElementById("copySessionBtn"),
   newSessionBtn: document.getElementById("newSessionBtn"),
   healthBtn: document.getElementById("healthBtn"),
@@ -25,6 +28,7 @@ const elements = {
 
 let chatMode = "query";
 let currentSessionId = "";
+let sessions = [];
 
 function createSessionId() {
   if (crypto.randomUUID) {
@@ -34,32 +38,138 @@ function createSessionId() {
   return `session-${Date.now()}-${Math.random().toString(16).slice(2)}`;
 }
 
+function createSessionRecord(id = createSessionId()) {
+  const timestamp = new Date().toISOString();
+  return {
+    id,
+    name: `Session ${sessions.length + 1}`,
+    createdAt: timestamp,
+    lastUsedAt: timestamp,
+  };
+}
+
+function formatSessionTime(isoString) {
+  return new Intl.DateTimeFormat(undefined, {
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+  }).format(new Date(isoString));
+}
+
+function describeSession(session) {
+  if (!session) {
+    return "Session";
+  }
+
+  return `${session.name} - ${formatSessionTime(session.lastUsedAt || session.createdAt)}`;
+}
+
+function loadSessions() {
+  const raw = localStorage.getItem(SESSION_LIST_KEY);
+  if (!raw) {
+    return [];
+  }
+
+  try {
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed)
+      ? parsed
+          .filter((session) => session && typeof session.id === "string")
+          .map((session, index) => ({
+            id: session.id,
+            name: session.name || `Session ${index + 1}`,
+            createdAt: session.createdAt || new Date().toISOString(),
+            lastUsedAt: session.lastUsedAt || session.createdAt || new Date().toISOString(),
+          }))
+      : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveSessions() {
+  localStorage.setItem(SESSION_LIST_KEY, JSON.stringify(sessions));
+}
+
+function touchSession(sessionId) {
+  const session = sessions.find((item) => item.id === sessionId);
+  if (session) {
+    session.lastUsedAt = new Date().toISOString();
+    return session;
+  }
+
+  const newSession = createSessionRecord(sessionId);
+  sessions.unshift(newSession);
+  return newSession;
+}
+
+function renderSessionControls() {
+  const sortedSessions = [...sessions].sort((a, b) => {
+    const aTime = new Date(a.lastUsedAt || a.createdAt).getTime();
+    const bTime = new Date(b.lastUsedAt || b.createdAt).getTime();
+    return bTime - aTime;
+  });
+
+  sessions = sortedSessions;
+  elements.sessionSelect.replaceChildren();
+
+  for (const session of sessions) {
+    const option = document.createElement("option");
+    option.value = session.id;
+    option.textContent = describeSession(session);
+    elements.sessionSelect.appendChild(option);
+  }
+
+  const selectedSession = sessions.find((session) => session.id === currentSessionId) || sessions[0];
+  if (selectedSession) {
+    elements.sessionSelect.value = selectedSession.id;
+    elements.activeSessionName.textContent = selectedSession.name;
+    elements.sessionSelect.title = describeSession(selectedSession);
+  } else {
+    elements.activeSessionName.textContent = "Session";
+    elements.sessionSelect.title = "";
+  }
+
+  elements.sessionCountBadge.textContent = `${sessions.length} saved`;
+}
+
+function persistSessionState(sessionId) {
+  currentSessionId = sessionId;
+  localStorage.setItem(SESSION_KEY, currentSessionId);
+  touchSession(sessionId);
+  saveSessions();
+  renderSessionControls();
+}
+
 function getSessionId() {
   if (!currentSessionId) {
-    setSessionId(createSessionId());
+    persistSessionState(createSessionId());
   }
 
   return currentSessionId;
 }
 
 function initializeSession() {
+  sessions = loadSessions();
   const saved = localStorage.getItem(SESSION_KEY);
-  setSessionId(saved || createSessionId());
-}
-
-function setSessionId(sessionId) {
-  currentSessionId = sessionId;
-  localStorage.setItem(SESSION_KEY, currentSessionId);
-  elements.sessionChip.textContent = compactSessionId(currentSessionId);
-  elements.sessionChip.title = currentSessionId;
-}
-
-function compactSessionId(sessionId) {
-  if (sessionId.length <= 24) {
-    return sessionId;
+  if (saved) {
+    currentSessionId = saved;
+    touchSession(saved);
   }
 
-  return `${sessionId.slice(0, 16)}...${sessionId.slice(-8)}`;
+  if (!sessions.length) {
+    const firstSession = createSessionRecord(saved || createSessionId());
+    sessions = [firstSession];
+    currentSessionId = firstSession.id;
+  } else if (!currentSessionId) {
+    currentSessionId = sessions[0].id;
+  }
+
+  touchSession(currentSessionId);
+  localStorage.setItem(SESSION_KEY, currentSessionId);
+  saveSessions();
+  renderSessionControls();
 }
 
 function formatJson(value) {
@@ -233,18 +343,33 @@ elements.copySessionBtn.addEventListener("click", async () => {
     await navigator.clipboard.writeText(sessionId);
     elements.copySessionBtn.textContent = "Copied";
     setTimeout(() => {
-      elements.copySessionBtn.textContent = "Copy";
+      elements.copySessionBtn.textContent = "Copy ID";
     }, 1200);
   } catch {
     elements.copySessionBtn.textContent = "Copy failed";
     setTimeout(() => {
-      elements.copySessionBtn.textContent = "Copy";
+      elements.copySessionBtn.textContent = "Copy ID";
     }, 1200);
   }
 });
 
 elements.newSessionBtn.addEventListener("click", () => {
-  setSessionId(createSessionId());
+  const session = createSessionRecord();
+  sessions.unshift(session);
+  currentSessionId = session.id;
+  localStorage.setItem(SESSION_KEY, currentSessionId);
+  saveSessions();
+  renderSessionControls();
+  elements.chatMessages.replaceChildren();
+});
+
+elements.sessionSelect.addEventListener("change", () => {
+  const nextSessionId = elements.sessionSelect.value;
+  if (!nextSessionId || nextSessionId === currentSessionId) {
+    return;
+  }
+
+  persistSessionState(nextSessionId);
   elements.chatMessages.replaceChildren();
 });
 

@@ -12,7 +12,11 @@ from models.router import model_router
 from observability.metrics import metrics_collector
 from observability.tracing import trace_manager
 from pipeline.generation_stage import run_generation
-from pipeline.memory_stage import build_memory_context
+from pipeline.memory_stage import (
+    build_memory_context,
+    build_retrieval_query,
+    resolve_memory_answer,
+)
 from pipeline.retrieval_stage import run_retrieval
 from pipeline.safety_stage import validate_answer
 from rag.context_builder import context_builder
@@ -25,14 +29,40 @@ class RAGPipeline:
     async def _prepare(self, query: str, session_id: str) -> dict[str, Any]:
         """Validate input and prepare retrieval, prompt, and model selection."""
 
-        query = input_guard.validate_input(query)
+        guardrail_result = input_guard.validate_input(query)
+        if guardrail_result.blocked:
+            return {
+                "blocked": True,
+                "guardrail_message": guardrail_result.message,
+                "guardrail_reason": guardrail_result.matched_pattern,
+                "query": query,
+                "retrieval_query": query,
+            }
+
+        query = guardrail_result.cleaned_text or query
+
+        memory_answer = resolve_memory_answer(
+            session_id=session_id,
+            query=query,
+        )
+        if memory_answer:
+            return {
+                "blocked": False,
+                "memory_answer": memory_answer,
+                "query": query,
+            }
 
         memory_context = build_memory_context(
             session_id=session_id,
             query=query,
         )
 
-        retrieved_docs = await run_retrieval(query=query)
+        retrieval_query = build_retrieval_query(
+            session_id=session_id,
+            query=query,
+        )
+
+        retrieved_docs = await run_retrieval(query=retrieval_query)
 
         with trace_manager.trace("context_building"):
             context = context_builder.build_context(retrieved_docs)
@@ -52,7 +82,9 @@ class RAGPipeline:
         logger.info(f"Selected model: {selected_model}")
 
         return {
+            "blocked": False,
             "query": query,
+            "retrieval_query": retrieval_query,
             "prompt": prompt,
             "context": context,
             "retrieved_docs": retrieved_docs,
@@ -72,6 +104,43 @@ class RAGPipeline:
         logger.info(f"Starting async RAG pipeline for query: {query}")
 
         prepared = await self._prepare(query=query, session_id=session_id)
+        if prepared.get("blocked") and prepared.get("guardrail_message"):
+            latency_ms = (time.time() - start_time) * 1000
+            blocked_message = prepared["guardrail_message"]
+            logger.info(f"Pipeline interrupted in {latency_ms:.2f} ms")
+            return self._build_interrupted_response(
+                query=query,
+                message=blocked_message,
+                latency_ms=latency_ms,
+                reason=prepared.get("guardrail_reason"),
+            )
+
+        if prepared.get("memory_answer"):
+            answer = prepared["memory_answer"]
+            latency_ms = (time.time() - start_time) * 1000
+            self._store_memory(
+                session_id=session_id,
+                query=query,
+                answer=answer,
+            )
+            return {
+                "query": query,
+                "answer": answer,
+                "model_used": "session-memory",
+                "sources": [],
+                "tokens_used": {
+                    "prompt_tokens": 0,
+                    "completion_tokens": 0,
+                    "total_tokens": 0,
+                },
+                "latency_ms": latency_ms,
+                "confidence_score": 1.0,
+                "is_hallucinated": False,
+                "status": "success",
+                "message": "Answer resolved from conversation memory.",
+                "guardrail_triggered": False,
+            }
+
         query = prepared["query"]
         prompt = prepared["prompt"]
         context = prepared["context"]
@@ -90,7 +159,14 @@ class RAGPipeline:
 
         logger.info(f"Pipeline completed in {latency_ms:.2f} ms")
 
-        answer, confidence_score, is_hallucinated = await validate_answer(
+        (
+            answer,
+            confidence_score,
+            is_hallucinated,
+            output_guard_triggered,
+            guardrail_message,
+            guardrail_reason,
+        ) = await validate_answer(
             query=query,
             context=context,
             answer=answer,
@@ -133,6 +209,10 @@ class RAGPipeline:
             "latency_ms": latency_ms,
             "confidence_score": confidence_score,
             "is_hallucinated": is_hallucinated,
+            "status": "blocked" if output_guard_triggered else "success",
+            "message": guardrail_message,
+            "guardrail_triggered": output_guard_triggered,
+            "guardrail_reason": guardrail_reason,
         }
 
     async def astream(self, query: str, session_id: str = "default"):
@@ -141,6 +221,14 @@ class RAGPipeline:
         from models.ollama_client import ollama_client
 
         prepared = await self._prepare(query=query, session_id=session_id)
+        if prepared.get("blocked") and prepared.get("guardrail_message"):
+            yield prepared["guardrail_message"]
+            return
+
+        if prepared.get("memory_answer"):
+            yield prepared["memory_answer"]
+            return
+
         prompt = prepared["prompt"]
         selected_model = prepared["selected_model"]
 
@@ -181,6 +269,32 @@ class RAGPipeline:
         updated_history = session_memory.get_recent_history(session_id)
         summary = conversation_summarizer.summarize(updated_history)
         semantic_memory.remember(session_id=session_id, memory=summary)
+
+    def _build_interrupted_response(
+        self,
+        query: str,
+        message: str,
+        latency_ms: float,
+        reason: str | None = None,
+    ) -> dict[str, Any]:
+        return {
+            "query": query,
+            "answer": message,
+            "model_used": "guardrail",
+            "sources": [],
+            "tokens_used": {
+                "prompt_tokens": 0,
+                "completion_tokens": 0,
+                "total_tokens": 0,
+            },
+            "latency_ms": latency_ms,
+            "confidence_score": None,
+            "is_hallucinated": False,
+            "status": "blocked",
+            "message": message,
+            "guardrail_triggered": True,
+            "guardrail_reason": reason,
+        }
 
 
 rag_pipeline = RAGPipeline()

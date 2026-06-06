@@ -4,7 +4,6 @@ import json
 import time
 from dataclasses import dataclass
 from typing import Any
-
 from core.config import settings
 from core.logger import logger
 from observability.metrics import metrics_collector
@@ -16,7 +15,6 @@ class CacheEntry:
 
     value: str
     expires_at: float
-
 
 class CacheManager:
     """Async-compatible cache manager with Redis support and memory fallback."""
@@ -227,15 +225,6 @@ class CacheManager:
             self.backend = "memory"
             return None
 
-    def _serialize(self, value: Any) -> str:
-        return json.dumps(value, sort_keys=True, default=self._json_default)
-
-    @staticmethod
-    def _json_default(value: Any) -> Any:
-        if hasattr(value, "tolist"):
-            return value.tolist()
-        raise TypeError(f"Object of type {type(value).__name__} is not JSON serializable")
-
     def _record(self, event: str, start: float) -> None:
         latency_ms = (time.perf_counter() - start) * 1000
         metrics_collector.record("cache_latency_ms", latency_ms)
@@ -246,5 +235,13 @@ class CacheManager:
         else:
             metrics_collector.record("cache_errors", 1)
 
+    def _serialize(self, value: Any) -> str:
+        return json.dumps(value, sort_keys=True, default=self._json_default)
+
+    @staticmethod
+    def _json_default(value: Any) -> Any:
+        if hasattr(value, "tolist"):
+            return value.tolist()
+        raise TypeError(f"Object of type {type(value).__name__} is not JSON serializable")
 
 cache_manager = CacheManager()

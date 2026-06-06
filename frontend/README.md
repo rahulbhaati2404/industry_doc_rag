@@ -1,4 +1,4 @@
-# Industry Document RAG Frontend
+# Enterprise Document RAG Frontend
 
 Dependency-free frontend for the existing FastAPI backend.
 
@@ -22,7 +22,7 @@ Open:
 http://127.0.0.1:5173
 ```
 
-The frontend calls the backend through `/api/v1/*`. By default the proxy targets `http://127.0.0.1:8000`.
+The frontend calls the backend through `/api/v1/*`. By default the proxy targets `http://127.0.0.1:9000`.
 
 To use a different backend URL:
 

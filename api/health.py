@@ -1,8 +1,6 @@
 import asyncio
 from typing import Any
-
 from fastapi import APIRouter
-
 from cache.cache_manager import cache_manager
 from core.config import settings
 from core.logger import logger

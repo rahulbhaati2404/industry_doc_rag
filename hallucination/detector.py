@@ -1,5 +1,4 @@
 from transformers import pipeline
-
 from core.config import settings
 from core.logger import logger
 import asyncio
@@ -31,7 +30,6 @@ class HallucinationDetector:
     ):
 
         premise = context[:3000]
-
         hypothesis = answer
 
         result = self.detector(
@@ -45,7 +43,6 @@ class HallucinationDetector:
             result = result[0]
 
         label = result["label"]
-
         score = float(result["score"])
 
         logger.info(
@@ -57,11 +54,10 @@ class HallucinationDetector:
             label.upper() == "CONTRADICTION"
         )
 
-        confidence_score = (
-            1.0 - score
-            if is_hallucinated
-            else score
-        )
+        if is_hallucinated:
+            confidence_score = 1.0 - score
+        else:
+            confidence_score = score
 
         return {
             "score": confidence_score,
@@ -77,13 +73,9 @@ class HallucinationDetector:
     ):
 
         return await asyncio.to_thread(
-
             self.evaluate,
-
             query,
-
             context,
-
             answer
         )    
 

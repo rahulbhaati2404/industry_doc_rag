@@ -2,13 +2,12 @@ from core.config import settings
 from core.logger import logger
 from observability.tracing import trace_manager
 
-
 async def validate_answer(
     query: str,
     context: str,
     answer: str,
     model: str,
-) -> tuple[str, float, bool]:
+) -> tuple[str, float, bool, bool, str | None, str | None]:
     """Run hallucination detection, mitigation, and output guardrails."""
 
     from guardrails.output_guard import output_guard
@@ -49,4 +48,12 @@ async def validate_answer(
             "from the provided documents."
         )
 
-    return output_guard.validate_output(answer), confidence_score, is_hallucinated
+    output_result = output_guard.validate_output(answer)
+    return (
+        output_result.cleaned_text or answer,
+        confidence_score,
+        is_hallucinated,
+        output_result.blocked,
+        output_result.message,
+        output_result.matched_pattern,
+    )

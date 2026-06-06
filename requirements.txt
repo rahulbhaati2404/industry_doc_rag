@@ -32,6 +32,6 @@ pyarrow
 #pip install -r requirements.txt
 #pip install ollama
 #python backend/test_ollama.py
-#$env:API_TARGET="http://127.0.0.1:9000"; node frontend\server.js
-#http://127.0.0.1:5173/   frontend
-#http://127.0.0.1:8000/  backend
+#$env:API_TARGET="http://127.0.0.1:9000"
+#http://127.0.0.1:5173/   cd frontend ; node server.js
+#http://127.0.0.1:9000/  python -m main

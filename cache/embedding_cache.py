@@ -2,7 +2,6 @@ from typing import Any
 
 from cache.cache_manager import cache_manager
 
-
 class EmbeddingCache:
     """Cache wrapper for document and query embeddings."""
 

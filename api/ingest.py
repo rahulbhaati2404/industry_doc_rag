@@ -1,9 +1,7 @@
 from pathlib import Path
 from typing import Any
 import time
-
 from fastapi import APIRouter, File, UploadFile
-
 from core.config import settings
 from core.logger import logger
 from observability.metrics import metrics_collector
@@ -12,7 +10,6 @@ from rag.ingestion import document_ingestion
 from rag.vector_store import vector_store
 
 router = APIRouter()
-
 
 @router.post("/ingest")
 async def ingest_document(file: UploadFile = File(...)) -> dict[str, Any]:

@@ -71,11 +71,8 @@ class OllamaClient:
         )
 
         response = await asyncio.to_thread(
-
             ollama.generate,
-
             model=model,
-
             prompt=prompt
         )
 
@@ -87,24 +84,16 @@ class OllamaClient:
         prompt: str,
         model: str
     ):
-
         logger.info(
             f"Streaming generation using {model}"
         )
-
         stream = await asyncio.to_thread(
-
             ollama.generate,
-
             model=model,
-
             prompt=prompt,
-
             stream=True
         )
-
         for chunk in stream:
-
             yield chunk["response"]
 
 

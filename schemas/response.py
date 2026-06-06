@@ -26,3 +26,8 @@ class QueryResponse(BaseModel):
     confidence_score: Optional[float] = None
 
     is_hallucinated: bool = False
+
+    status: str = "success"
+    message: Optional[str] = None
+    guardrail_triggered: bool = False
+    guardrail_reason: Optional[str] = None
