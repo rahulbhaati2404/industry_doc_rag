@@ -2281,3 +2281,291 @@ Caused by: java.io.IOException: An established connection was aborted by the sof
 2026-06-07 01:25:27.779 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
 2026-06-07 01:25:48.597 | INFO     | main:startup_event:37 - Enterprise Document RAG Engine starting...
 2026-06-07 01:28:27.519 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-07 01:28:49.331 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-07 01:29:08.037 | INFO     | main:startup_event:37 - Enterprise Document RAG Engine starting...
+2026-06-07 01:30:05.791 | INFO     | api.ingest:ingest_document:31 - File saved: data/raw/POSH IC Committee_2025-26.pdf
+2026-06-07 01:30:05.916 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_pages_processed=1
+2026-06-07 01:30:05.916 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_created=2
+2026-06-07 01:30:05.917 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_processing_time_ms=123.69459999899846
+2026-06-07 01:30:06.158 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_save_time_ms=239.97609999787528
+2026-06-07 01:30:06.158 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_saved=2
+2026-06-07 01:30:06.159 | INFO     | api.ingest:ingest_document:36 - Chunking complete: 2 chunks created
+2026-06-07 01:30:18.670 | INFO     | observability.metrics:record:11 - [METRIC] embedding_chunks_processed=2
+2026-06-07 01:30:18.670 | INFO     | observability.metrics:record:11 - [METRIC] embedding_processing_time_ms=12510.576000000583
+2026-06-07 01:30:18.671 | INFO     | observability.metrics:record:11 - [METRIC] embedding_model_used=BAAI/bge-small-en-v1.5
+2026-06-07 01:30:18.685 | INFO     | api.ingest:ingest_document:40 - Embedding complete: vectors generated
+2026-06-07 01:30:18.877 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_chunks_upserted=2
+2026-06-07 01:30:18.877 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_upsert_time_ms=191.53939999523573
+2026-06-07 01:30:18.877 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_collection=industry_documents
+2026-06-07 01:30:18.877 | INFO     | api.ingest:ingest_document:43 - ChromaDB storage complete: 2 chunks upserted
+2026-06-07 01:30:18.879 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_total_time_ms=13089.183699994464
+2026-06-07 01:30:18.879 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_success=1
+2026-06-07 01:30:50.290 | INFO     | api.ingest:ingest_document:31 - File saved: data/raw/KRA&Goals_Performance Management process .pdf
+2026-06-07 01:30:50.541 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_pages_processed=9
+2026-06-07 01:30:50.542 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_created=10
+2026-06-07 01:30:50.542 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_processing_time_ms=250.13270000636112
+2026-06-07 01:30:50.554 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_save_time_ms=11.498899999423884
+2026-06-07 01:30:50.554 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_saved=10
+2026-06-07 01:30:50.555 | INFO     | api.ingest:ingest_document:36 - Chunking complete: 10 chunks created
+2026-06-07 01:30:51.506 | INFO     | observability.metrics:record:11 - [METRIC] embedding_chunks_processed=10
+2026-06-07 01:30:51.506 | INFO     | observability.metrics:record:11 - [METRIC] embedding_processing_time_ms=949.2296999960672
+2026-06-07 01:30:51.507 | INFO     | observability.metrics:record:11 - [METRIC] embedding_model_used=BAAI/bge-small-en-v1.5
+2026-06-07 01:30:51.525 | INFO     | api.ingest:ingest_document:40 - Embedding complete: vectors generated
+2026-06-07 01:30:51.568 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_chunks_upserted=10
+2026-06-07 01:30:51.569 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_upsert_time_ms=42.57960000541061
+2026-06-07 01:30:51.569 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_collection=industry_documents
+2026-06-07 01:30:51.569 | INFO     | api.ingest:ingest_document:43 - ChromaDB storage complete: 10 chunks upserted
+2026-06-07 01:30:51.570 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_total_time_ms=1282.7718000044115
+2026-06-07 01:30:51.570 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_success=1
+2026-06-07 01:30:59.075 | INFO     | api.ingest:ingest_document:31 - File saved: data/raw/Wissen_Group Mediclaim Insurance and GPA Guide 2026-27.pdf
+2026-06-07 01:31:00.506 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_pages_processed=28
+2026-06-07 01:31:00.507 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_created=36
+2026-06-07 01:31:00.507 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_processing_time_ms=1430.012099997839
+2026-06-07 01:31:00.520 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_save_time_ms=11.302500002784654
+2026-06-07 01:31:00.520 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_saved=36
+2026-06-07 01:31:00.521 | INFO     | api.ingest:ingest_document:36 - Chunking complete: 36 chunks created
+2026-06-07 01:31:04.648 | INFO     | observability.metrics:record:11 - [METRIC] embedding_chunks_processed=36
+2026-06-07 01:31:04.648 | INFO     | observability.metrics:record:11 - [METRIC] embedding_processing_time_ms=4126.988200005144
+2026-06-07 01:31:04.648 | INFO     | observability.metrics:record:11 - [METRIC] embedding_model_used=BAAI/bge-small-en-v1.5
+2026-06-07 01:31:04.676 | INFO     | api.ingest:ingest_document:40 - Embedding complete: vectors generated
+2026-06-07 01:31:04.793 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_chunks_upserted=36
+2026-06-07 01:31:04.794 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_upsert_time_ms=115.99959999148268
+2026-06-07 01:31:04.794 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_collection=industry_documents
+2026-06-07 01:31:04.794 | INFO     | api.ingest:ingest_document:43 - ChromaDB storage complete: 36 chunks upserted
+2026-06-07 01:31:04.796 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_total_time_ms=5725.005300002522
+2026-06-07 01:31:04.796 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_success=1
+2026-06-07 01:31:18.668 | INFO     | api.ingest:ingest_document:31 - File saved: data/raw/Appraisals  Bonus Payout Guigelines_WT_V.3.pdf
+2026-06-07 01:31:18.889 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_pages_processed=3
+2026-06-07 01:31:18.890 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_created=7
+2026-06-07 01:31:18.890 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_processing_time_ms=220.26769998774398
+2026-06-07 01:31:18.901 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_save_time_ms=10.416899996926077
+2026-06-07 01:31:18.902 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_saved=7
+2026-06-07 01:31:18.902 | INFO     | api.ingest:ingest_document:36 - Chunking complete: 7 chunks created
+2026-06-07 01:31:19.736 | INFO     | observability.metrics:record:11 - [METRIC] embedding_chunks_processed=7
+2026-06-07 01:31:19.737 | INFO     | observability.metrics:record:11 - [METRIC] embedding_processing_time_ms=833.4002000046894
+2026-06-07 01:31:19.738 | INFO     | observability.metrics:record:11 - [METRIC] embedding_model_used=BAAI/bge-small-en-v1.5
+2026-06-07 01:31:19.755 | INFO     | api.ingest:ingest_document:40 - Embedding complete: vectors generated
+2026-06-07 01:31:19.802 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_chunks_upserted=7
+2026-06-07 01:31:19.803 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_upsert_time_ms=46.547399993869476
+2026-06-07 01:31:19.803 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_collection=industry_documents
+2026-06-07 01:31:19.804 | INFO     | api.ingest:ingest_document:43 - ChromaDB storage complete: 7 chunks upserted
+2026-06-07 01:31:19.804 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_total_time_ms=1137.6852999965195
+2026-06-07 01:31:19.804 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_success=1
+2026-06-07 01:31:28.651 | INFO     | api.ingest:ingest_document:31 - File saved: data/raw/Wissen Holiday Calendar 2026.pdf
+2026-06-07 01:31:28.747 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_pages_processed=1
+2026-06-07 01:31:28.747 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_created=1
+2026-06-07 01:31:28.747 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_processing_time_ms=92.81560000090394
+2026-06-07 01:31:28.759 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_save_time_ms=9.615199989639223
+2026-06-07 01:31:28.759 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_saved=1
+2026-06-07 01:31:28.760 | INFO     | api.ingest:ingest_document:36 - Chunking complete: 1 chunks created
+2026-06-07 01:31:28.861 | INFO     | observability.metrics:record:11 - [METRIC] embedding_chunks_processed=1
+2026-06-07 01:31:28.862 | INFO     | observability.metrics:record:11 - [METRIC] embedding_processing_time_ms=101.02219998952933
+2026-06-07 01:31:28.862 | INFO     | observability.metrics:record:11 - [METRIC] embedding_model_used=BAAI/bge-small-en-v1.5
+2026-06-07 01:31:28.875 | INFO     | api.ingest:ingest_document:40 - Embedding complete: vectors generated
+2026-06-07 01:31:28.905 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_chunks_upserted=1
+2026-06-07 01:31:28.905 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_upsert_time_ms=28.836800003773533
+2026-06-07 01:31:28.906 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_collection=industry_documents
+2026-06-07 01:31:28.907 | INFO     | api.ingest:ingest_document:43 - ChromaDB storage complete: 1 chunks upserted
+2026-06-07 01:31:28.907 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_total_time_ms=255.5485999910161
+2026-06-07 01:31:28.908 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_success=1
+2026-06-07 01:31:35.410 | INFO     | api.ingest:ingest_document:31 - File saved: data/raw/Leave Policy_WT_V.2.26.pdf
+2026-06-07 01:31:35.779 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_pages_processed=6
+2026-06-07 01:31:35.780 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_created=12
+2026-06-07 01:31:35.781 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_processing_time_ms=368.4149000036996
+2026-06-07 01:31:35.792 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_save_time_ms=10.312300000805408
+2026-06-07 01:31:35.793 | INFO     | observability.metrics:record:11 - [METRIC] ingestion_chunks_saved=12
+2026-06-07 01:31:35.793 | INFO     | api.ingest:ingest_document:36 - Chunking complete: 12 chunks created
+2026-06-07 01:31:37.051 | INFO     | observability.metrics:record:11 - [METRIC] embedding_chunks_processed=12
+2026-06-07 01:31:37.052 | INFO     | observability.metrics:record:11 - [METRIC] embedding_processing_time_ms=1257.004400002188
+2026-06-07 01:31:37.052 | INFO     | observability.metrics:record:11 - [METRIC] embedding_model_used=BAAI/bge-small-en-v1.5
+2026-06-07 01:31:37.065 | INFO     | api.ingest:ingest_document:40 - Embedding complete: vectors generated
+2026-06-07 01:31:37.120 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_chunks_upserted=12
+2026-06-07 01:31:37.120 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_upsert_time_ms=53.86299999372568
+2026-06-07 01:31:37.120 | INFO     | observability.metrics:record:11 - [METRIC] vector_store_collection=industry_documents
+2026-06-07 01:31:37.120 | INFO     | api.ingest:ingest_document:43 - ChromaDB storage complete: 12 chunks upserted
+2026-06-07 01:31:37.120 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_total_time_ms=1714.5993000012822
+2026-06-07 01:31:37.120 | INFO     | observability.metrics:record:11 - [METRIC] api_ingest_success=1
+2026-06-07 01:32:07.872 | INFO     | guardrails.input_guard:validate_input:33 - Running input guardrails
+2026-06-07 01:32:07.875 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:32:07.875 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.0044000043999403715
+2026-06-07 01:32:07.876 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:32:07.927 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:32:07.928 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.0047000066842883825
+2026-06-07 01:32:07.928 | INFO     | observability.metrics:record:11 - [METRIC] cache_hits=1
+2026-06-07 01:32:07.929 | INFO     | memory.semantic_memory:recall:73 - Semantic memory cache hit
+2026-06-07 01:32:07.933 | INFO     | rag.reranker:__init__:12 - Loading reranker model: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-06-07 01:32:22.407 | INFO     | rag.reranker:__init__:20 - Reranker model loaded successfully
+2026-06-07 01:32:22.410 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-07 01:32:22.411 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: Hi, tell me About Group Mediclaim Policy
+2026-06-07 01:32:22.412 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.005699999746866524
+2026-06-07 01:32:22.413 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:32:22.413 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-07 01:32:22.455 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 42.15 ms
+2026-06-07 01:32:22.456 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-06-07 01:32:22.456 | INFO     | rag.reranker:rerank:36 - Reranking 5 documents
+2026-06-07 01:32:22.860 | INFO     | rag.reranker:rerank:63 - Returning top 3 reranked documents
+2026-06-07 01:32:22.860 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=4.3502 | Source=None
+2026-06-07 01:32:22.861 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=4.1841 | Source=None
+2026-06-07 01:32:22.861 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=3.7171 | Source=None
+2026-06-07 01:32:22.862 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-06-07 01:32:22.862 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-06-07 01:32:22.863 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=4.350222587585449
+2026-06-07 01:32:22.864 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 454.44 ms
+2026-06-07 01:32:22.864 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-06-07 01:32:22.864 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 0.00 ms
+2026-06-07 01:32:22.865 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-06-07 01:32:22.865 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 0.00 ms
+2026-06-07 01:32:22.867 | INFO     | rag.pipeline:_prepare:82 - Selected model: mistral
+2026-06-07 01:32:22.867 | INFO     | models.ollama_client:astream_generate:87 - Streaming generation using mistral
+2026-06-07 01:35:54.298 | INFO     | guardrails.input_guard:validate_input:33 - Running input guardrails
+2026-06-07 01:35:54.299 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:35:54.299 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.005199995939619839
+2026-06-07 01:35:54.301 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:35:54.345 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:35:54.346 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.004799992893822491
+2026-06-07 01:35:54.346 | INFO     | observability.metrics:record:11 - [METRIC] cache_hits=1
+2026-06-07 01:35:54.347 | INFO     | memory.semantic_memory:recall:73 - Semantic memory cache hit
+2026-06-07 01:35:54.347 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-07 01:35:54.348 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: List me all Holidays of Wissen for 2026
+2026-06-07 01:35:54.348 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.003100009053014219
+2026-06-07 01:35:54.349 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:35:54.349 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-07 01:35:54.406 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 57.12 ms
+2026-06-07 01:35:54.407 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-06-07 01:35:54.408 | INFO     | rag.reranker:rerank:36 - Reranking 5 documents
+2026-06-07 01:35:54.822 | INFO     | rag.reranker:rerank:63 - Returning top 3 reranked documents
+2026-06-07 01:35:54.823 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=5.4535 | Source=None
+2026-06-07 01:35:54.824 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=-0.3570 | Source=None
+2026-06-07 01:35:54.824 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=-4.2671 | Source=None
+2026-06-07 01:35:54.825 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-06-07 01:35:54.825 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-06-07 01:35:54.826 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=5.453451633453369
+2026-06-07 01:35:54.827 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 479.71 ms
+2026-06-07 01:35:54.827 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-06-07 01:35:54.828 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 1.00 ms
+2026-06-07 01:35:54.828 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-06-07 01:35:54.829 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 1.00 ms
+2026-06-07 01:35:54.830 | INFO     | rag.pipeline:_prepare:82 - Selected model: mistral
+2026-06-07 01:35:54.830 | INFO     | models.ollama_client:astream_generate:87 - Streaming generation using mistral
+2026-06-07 01:38:22.173 | INFO     | guardrails.input_guard:validate_input:33 - Running input guardrails
+2026-06-07 01:38:22.174 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:38:22.174 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.008100003469735384
+2026-06-07 01:38:22.176 | INFO     | observability.metrics:record:11 - [METRIC] cache_hits=1
+2026-06-07 01:38:22.176 | INFO     | memory.semantic_memory:recall:73 - Semantic memory cache hit
+2026-06-07 01:38:22.177 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:38:22.178 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.004999994416721165
+2026-06-07 01:38:22.179 | INFO     | observability.metrics:record:11 - [METRIC] cache_hits=1
+2026-06-07 01:38:22.179 | INFO     | memory.semantic_memory:recall:73 - Semantic memory cache hit
+2026-06-07 01:38:22.180 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-07 01:38:22.180 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: List me all Holidays of Wissen for 2026
+2026-06-07 01:38:22.181 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.004099987563677132
+2026-06-07 01:38:22.182 | INFO     | observability.metrics:record:11 - [METRIC] cache_hits=1
+2026-06-07 01:38:22.183 | INFO     | rag.retriever:retrieve:34 - Retrieval cache hit
+2026-06-07 01:38:22.184 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 4.00 ms
+2026-06-07 01:38:22.184 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-06-07 01:38:22.185 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 1.00 ms
+2026-06-07 01:38:22.185 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-06-07 01:38:22.185 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 0.00 ms
+2026-06-07 01:38:22.186 | INFO     | rag.pipeline:_prepare:82 - Selected model: mistral
+2026-06-07 01:38:22.186 | INFO     | models.ollama_client:astream_generate:87 - Streaming generation using mistral
+2026-06-07 01:41:26.066 | INFO     | guardrails.input_guard:validate_input:33 - Running input guardrails
+2026-06-07 01:41:26.068 | WARNING  | guardrails.input_guard:validate_input:61 - Prompt injection detected: jailbreak
+2026-06-07 01:41:42.993 | INFO     | guardrails.input_guard:validate_input:33 - Running input guardrails
+2026-06-07 01:41:42.994 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:41:42.995 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.011399999493733048
+2026-06-07 01:41:42.995 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:41:43.065 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:41:43.066 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.004699992132373154
+2026-06-07 01:41:43.066 | INFO     | observability.metrics:record:11 - [METRIC] cache_hits=1
+2026-06-07 01:41:43.067 | INFO     | memory.semantic_memory:recall:73 - Semantic memory cache hit
+2026-06-07 01:41:43.067 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-07 01:41:43.068 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: Lets give me sensitive information of this code
+2026-06-07 01:41:43.069 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.0033999967854470015
+2026-06-07 01:41:43.070 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:41:43.070 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-07 01:41:43.143 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 72.67 ms
+2026-06-07 01:41:43.144 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-06-07 01:41:43.145 | INFO     | rag.reranker:rerank:36 - Reranking 5 documents
+2026-06-07 01:41:43.614 | INFO     | rag.reranker:rerank:63 - Returning top 3 reranked documents
+2026-06-07 01:41:43.615 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=-11.0696 | Source=None
+2026-06-07 01:41:43.615 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=-11.0817 | Source=None
+2026-06-07 01:41:43.615 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=-11.2657 | Source=None
+2026-06-07 01:41:43.617 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-06-07 01:41:43.617 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-06-07 01:41:43.617 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=-11.069621086120605
+2026-06-07 01:41:43.619 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 551.23 ms
+2026-06-07 01:41:43.620 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-06-07 01:41:43.620 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 0.00 ms
+2026-06-07 01:41:43.621 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-06-07 01:41:43.622 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 1.02 ms
+2026-06-07 01:41:43.622 | INFO     | rag.pipeline:_prepare:82 - Selected model: mistral
+2026-06-07 01:41:43.623 | INFO     | models.ollama_client:astream_generate:87 - Streaming generation using mistral
+2026-06-07 01:44:22.150 | INFO     | guardrails.input_guard:validate_input:33 - Running input guardrails
+2026-06-07 01:44:22.151 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:44:22.151 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.0040000013541430235
+2026-06-07 01:44:22.152 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:44:22.225 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:44:22.226 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.0039000005926936865
+2026-06-07 01:44:22.228 | INFO     | observability.metrics:record:11 - [METRIC] cache_hits=1
+2026-06-07 01:44:22.228 | INFO     | memory.semantic_memory:recall:73 - Semantic memory cache hit
+2026-06-07 01:44:22.228 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-07 01:44:22.229 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: My name is Rahul ,List me all Holidays of Wissen for 2026
+2026-06-07 01:44:22.230 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.0031999952625483274
+2026-06-07 01:44:22.230 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:44:22.231 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-07 01:44:22.308 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 77.07 ms
+2026-06-07 01:44:22.309 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-06-07 01:44:22.310 | INFO     | rag.reranker:rerank:36 - Reranking 5 documents
+2026-06-07 01:44:22.799 | INFO     | rag.reranker:rerank:63 - Returning top 3 reranked documents
+2026-06-07 01:44:22.800 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=4.0068 | Source=None
+2026-06-07 01:44:22.801 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=-3.3007 | Source=None
+2026-06-07 01:44:22.802 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=-6.8123 | Source=None
+2026-06-07 01:44:22.802 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-06-07 01:44:22.803 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-06-07 01:44:22.803 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=4.006773948669434
+2026-06-07 01:44:22.804 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 575.80 ms
+2026-06-07 01:44:22.805 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-06-07 01:44:22.806 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 1.00 ms
+2026-06-07 01:44:22.806 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-06-07 01:44:22.806 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 0.00 ms
+2026-06-07 01:44:22.807 | INFO     | rag.pipeline:_prepare:82 - Selected model: mistral
+2026-06-07 01:44:22.808 | INFO     | models.ollama_client:astream_generate:87 - Streaming generation using mistral
+2026-06-07 01:46:57.913 | INFO     | guardrails.input_guard:validate_input:33 - Running input guardrails
+2026-06-07 01:46:57.914 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:46:57.915 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.005299996701069176
+2026-06-07 01:46:57.916 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:46:57.980 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:46:57.981 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.0044000043999403715
+2026-06-07 01:46:57.982 | INFO     | observability.metrics:record:11 - [METRIC] cache_hits=1
+2026-06-07 01:46:57.984 | INFO     | memory.semantic_memory:recall:73 - Semantic memory cache hit
+2026-06-07 01:46:57.984 | INFO     | memory.semantic_memory:recall:63 - Recalling semantic memory
+2026-06-07 01:46:57.985 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.0029999937396496534
+2026-06-07 01:46:57.986 | INFO     | observability.metrics:record:11 - [METRIC] cache_hits=1
+2026-06-07 01:46:57.986 | INFO     | memory.semantic_memory:recall:73 - Semantic memory cache hit
+2026-06-07 01:46:57.987 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-07 01:46:57.988 | INFO     | rag.retriever:retrieve:24 - Running retrieval for query: What is my name?
+2026-06-07 01:46:57.989 | INFO     | observability.metrics:record:11 - [METRIC] cache_latency_ms=0.00549999822396785
+2026-06-07 01:46:57.989 | INFO     | observability.metrics:record:11 - [METRIC] cache_misses=1
+2026-06-07 01:46:57.990 | INFO     | observability.tracing:trace:17 - [TRACE START] retrieval
+2026-06-07 01:46:58.061 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 71.33 ms
+2026-06-07 01:46:58.062 | INFO     | rag.retriever:retrieve:61 - Retrieved 5 candidate documents
+2026-06-07 01:46:58.062 | INFO     | rag.reranker:rerank:36 - Reranking 5 documents
+2026-06-07 01:46:58.465 | INFO     | rag.reranker:rerank:63 - Returning top 3 reranked documents
+2026-06-07 01:46:58.466 | INFO     | rag.retriever:retrieve:71 - Rank 1 | Score=-10.9292 | Source=None
+2026-06-07 01:46:58.466 | INFO     | rag.retriever:retrieve:71 - Rank 2 | Score=-11.1448 | Source=None
+2026-06-07 01:46:58.467 | INFO     | rag.retriever:retrieve:71 - Rank 3 | Score=-11.1792 | Source=None
+2026-06-07 01:46:58.467 | INFO     | rag.retriever:retrieve:77 - Final reranked docs count: 3
+2026-06-07 01:46:58.468 | INFO     | observability.metrics:record:11 - [METRIC] retrieved_documents=3
+2026-06-07 01:46:58.468 | INFO     | observability.metrics:record:11 - [METRIC] top_rerank_score=-10.92919635772705
+2026-06-07 01:46:58.471 | INFO     | observability.tracing:trace:31 - [TRACE END] retrieval | 484.06 ms
+2026-06-07 01:46:58.471 | INFO     | observability.tracing:trace:17 - [TRACE START] context_building
+2026-06-07 01:46:58.472 | INFO     | observability.tracing:trace:31 - [TRACE END] context_building | 1.00 ms
+2026-06-07 01:46:58.472 | INFO     | observability.tracing:trace:17 - [TRACE START] prompt_building
+2026-06-07 01:46:58.472 | INFO     | observability.tracing:trace:31 - [TRACE END] prompt_building | 0.00 ms
+2026-06-07 01:46:58.474 | INFO     | rag.pipeline:_prepare:82 - Selected model: mistral
+2026-06-07 01:46:58.474 | INFO     | models.ollama_client:astream_generate:87 - Streaming generation using mistral
+2026-06-07 01:52:32.071 | INFO     | main:shutdown_event:42 - Shutting down Enterprise Document RAG Engine...
+2026-06-07 02:30:27.841 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-07 02:30:56.416 | INFO     | models.model_registry:register:11 - Registering model: ollama_client
+2026-06-07 02:31:15.269 | INFO     | main:startup_event:37 - Enterprise Document RAG Engine starting...
+2026-06-07 02:46:50.180 | INFO     | main:shutdown_event:42 - Shutting down Enterprise Document RAG Engine...
